@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+    <title>Goodplant</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="header1200">
+            <h1 id="logo">
+                <a href="index.html">
+                    <img src="images/header-logo.png" alt="main-logo">
+                </a>
+            </h1>
+            <ul id="gnb">
+                <li>
+                    <a href="sub.html">병원소개</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">굿플란트</a></li>
+                        <li><a href="sub.html">협진진료</a></li>
+                        <li><a href="sub.html">의료진소개</a></li>
+                        <li><a href="sub.html">진료안내</a></li>
+                        <li><a href="sub.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">치아교정</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">청소년교정</a></li>
+                        <li><a href="sub.html">비발치돌출입</a></li>
+                        <li><a href="sub.html">설측교정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">임플란트</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">뼈이식</a></li>
+                        <li><a href="sub.html">전체</a></li>
+                        <li><a href="sub.html">앞니, 어금니</a></li>
+                        <li><a href="sub.html">틀니</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">심미보철</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">심미보철</a></li>
+                        <li><a href="sub.html">울세라믹</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">일반진료</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">치주관리</a></li>
+                        <li><a href="sub.html">잇몸치료</a></li>
+                        <li><a href="sub.html">스케일링</a></li>
+                        <li><a href="sub.html">치아외상</a></li>
+                        <li><a href="sub.html">신경치료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">진료예약</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">간편예약</a></li>
+                        <li><a href="sub.html">전화예약</a></li>
+                        <li><a href="sub.html">네이버예약</a></li>
+                        <li><a href="sub.html">카톡예약</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub2.html">커뮤니티</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub2.html">공지사항</a></li>
+                        <li><a href="sub2.html">상담문의</a></li>
+                        <li><a href="sub2.html">진료후기</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="gnb-right">
+                <li>
+                    <button class="search-icon">
+                        <span>검색하기</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="login-icon">
+                        <span>로그인하기</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="location-icon">
+                        <span>위치찾기</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div id="sub-bg"><span>서브메뉴배경</span></div>
+    </header>
+    <div class="modal" id="modalSearch">
+        <div class="modal-wrap">
+            <div class="modal-box">
+                <div class="modal-logo">
+                    <img alt="logo" src="images/header-logo-dark.png">
+                </div>
+                <button type="button" class="modal-close">
+                    <span>close</span>
+                </button>
+                <form name="searchForm" method="post" id="searchForm" autocomplete="off">
+                    <input type="text" name="search" id="search-input" placeholder="검색어를 입력하세요">
+                    <a href="#"><span>검색하기</span></a>
+                </form>
+                <ul class="tag-list">
+                    <li><a href="index.html" class="tag-btn">#사랑니발치</a></li>
+                    <li><a href="index.html" class="tag-btn">#청소년교정</a></li>
+                    <li><a href="index.html" class="tag-btn">#스케일링</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalLogin">
+        <div class="modal-wrap">
+            <div class="modal-box">
+                <div class="modal-logo">
+                    <img alt="logo" src="images/header-logo-dark.png">
+                </div>
+                <button type="button" class="modal-close">
+                    <span>close</span>
+                </button>
+                <form name="loginForm" id="loginForm" autocomplete="off">
+                    <div class="login-input-box">
+                        <input placeholder="아이디를 입력해주세요." name="userid" id="login-userid" type="text">
+                        <input placeholder="영, 숫자 포함 8자리 이상 입력해주세요." name="passwd" id="login-passwd" type="password">
+                        <button type="button" class="login-btn" id="loginBtn">로그인</button>
+                        <ul class="login-member">
+                            <li><a href="index.html" class="join-btn">회원가입</a></li>
+                            <li><a href="index.html" class="id-search-btn">아이디, 비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalLocation">
+        <div class="modal-wrap">
+            <div class="modal-box">
+                <div class="modal-logo">
+                    <img alt="logo" src="images/header-logo-dark.png">
+                </div>
+                <button type="button" class="modal-close">
+                    <span>close</span>
+                </button>
+                <ul class="location-list">
+                    <li>
+                        <strong>주소</strong>
+                        <p>서울 송파구 거마로 4 (거여동 37-6 B1층, 4층, 5층, 6층)</p>
+                    </li>
+                    <li>
+                        <strong>주차 안내</strong>
+                        <p>지하주차장 1층에 주차 가능합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <ul id="m-slide">
+            <li id="slide1">
+                <div class="m-slide-txt">
+                    <div class="slide-txt1">
+                        <p>평생 함께할 믿음직한 치과</p>
+                    </div>
+                    <div class="slide-txt2">
+                        <h2>
+                            최선의 선택을 제안하는 올바른 치과<br>
+                            굿플란트치과의원
+                        </h2>
+                    </div>
+                </div>
+            </li>
+            <li id="slide2">
+                <div class="m-slide-txt">
+                    <div class="slide-txt1">
+                        <p>본과진료외 통합협진 시스템</p>
+                    </div>
+                    <div class="slide-txt2">
+                        <h2>
+                            보건복지부인증 전문의 8인 원장들의<br>
+                            최상의 협진 시스템
+                        </h2>
+                    </div>
+                </div>
+            </li>
+            <li id="slide3">
+                <div class="m-slide-txt">
+                    <div class="slide-txt1">
+                        <p>끊임없는 치료연구와 바른진료 방식</p>
+                    </div>
+                    <div class="slide-txt2">
+                        <h2>
+                            매년 약 19,000명의 환자가 선택한<br>
+                            앞선 의료기관
+                        </h2>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="buttons">
+            <button class="btn-prev"><span>prev</span></button>
+            <button class="btn-next"><span>next</span></button>
+        </div>
+    </div>
+    <div class="section" id="section01">
+        <ul id="icon-menu">
+            <li>
+                <a href="#section03">
+                    <img src="images/main/menu-subject.png" alt="menu-subject">
+                    <span>진료분야</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section04">
+                    <img src="images/main/menu-doctor.png" alt="menu-doctor">
+                    <span>의료진소개</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section08">
+                    <img src="images/main/menu-reservation.png" alt="menu-reservation">
+                    <span>온라인예약</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section09">
+                    <img src="images/main/menu-review.png" alt="menu-review">
+                    <span>진료후기</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section12">
+                    <img src="images/main/menu-time.png" alt="menu-time">
+                    <span>진료시간</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="section02">
+        <h3>PROMISE YOU</h3>
+        <div class="left-box">
+            <img src="images/main/promise.png" alt="promise-img">
+        </div>
+        <div class="right-box">
+            <h4>
+                언제나 믿고 맡길 수 있는<br>
+                치과가 되겠습니다.
+            </h4>
+            <p>
+                환자분들은 아픈 몸과 불안한 마음으로 병원을 찾습니다.<br>
+                이 병원에서 올바른 진료를 받고 나을 수 있을지<br>
+                고민하고 찾아온 발걸음입니다.
+            </p>
+            <p>
+                굿플란트 치과의원은 항상 환자분들의 마음과 상황에 공감하고<br>
+                꼼꼼하고 편안한 진료와 상담을 통해<br>
+                언제나 믿고 맡길 수 있는 치과가 되겠습니다.
+            </p>
+            <p>
+                끊임없이 소통하여 편안한 마음으로 방문할 수 있는 치과,<br>
+                늘 연구하는 자세로 전문성과 실력을 갖춘 치과,<br>
+                정성과 진심을 다해 환자분들에게 다가가는<br>
+                평생 함께할 수 있는 치과를 약속드립니다.
+            </p>
+        </div>
+    </div>
+    <div class="section" id="section03">
+        <div class="title">
+            <h3 class="title-en">Medical subject</h3>
+            <h3 class="title-kr">진료분야</h3>
+            <p>환자분들을 위한 맞춤형 진료 시스템을 운영하고 있습니다.</p>
+        </div>
+        <div class="contents">
+            <ul>
+                <li>
+                    <div class="subject-img">
+                        <img src="images/main/subject1.png" alt="subject1">
+                        <div class="subject-hover">
+                            <a href="#">자세히 보기 →</a>
+                        </div>
+                    </div>
+                    <h4>치아교정센터</h4>
+                    <p>청소년 교정관리 / 비발치 돌출입 교정 / 설측교정</p>
+                </li>
+                <li>
+                    <div class="subject-img">
+                        <img src="images/main/subject2.png" alt="subject2">
+                        <div class="subject-hover">
+                            <a href="#">자세히 보기 →</a>
+                        </div>
+                    </div>
+                    <h4>임플란트센터</h4>
+                    <p>뼈이식 임플란트 / 전체 임플란트 / 앞니, 어금니 임플란트 / 틀니 임플란트</p>
+                </li>
+                <li>
+                    <div class="subject-img">
+                        <img src="images/main/subject3.png" alt="subject3">
+                        <div class="subject-hover">
+                            <a href="#">자세히 보기 →</a>
+                        </div>
+                    </div>
+                    <h4>심미보철센터</h4>
+                    <p>심미보철 / 울세라믹</p>
+                </li>
+                <li>
+                    <div class="subject-img">
+                        <img src="images/main/subject4.png" alt="subject4">
+                        <div class="subject-hover">
+                            <a href="#">자세히 보기 →</a>
+                        </div>
+                    </div>
+                    <h4>일반진료센터</h4>
+                    <p>치주관리 / 잇몸치료 / 스케일링 / 치아외상 / 신경치료 / 충치케어</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section04">
+        <h3>Doctors</h3>
+        <p>좋은 사람들, 바른 의료진</p>
+        <div class="contents">
+            <div class="buttons">
+                <button class="btn-prev"><span>prev</span></button>
+                <button class="btn-next"><span>next</span></button>
+            </div>
+            <ul id="doctor-list">
+                <li class="doctor1">
+                    <div class="left-box">
+                        <img src="images/main/doctor1.png" alt="doctor1">
+                    </div>
+                    <div class="right-box">
+                        <h4>원장 한 정 태</h4>
+                        <p>
+                            "환자분들의<br>
+                            평생 주치의를 꿈꿉니다"
+                        </p>
+                        <span>치주과 전문의</span>
+                        <div class="history">
+                            <ul>
+                                <li>단국대학교 치과대학 졸업</li>
+                                <li>단국대학교 치과대학병원 인턴</li>
+                                <li>단국대학교 치과대학병원 치주과 레지던트</li>
+                                <li>단국대학교 치과대학 치주과 석사</li>
+                                <li>단국대학교 치과대학 외래교수</li>
+                                <li>중앙대학교 의료원 치주과 임상교수</li>
+                            </ul>
+                            <ul>
+                                <li>보건복지부인증 치주과 전문의</li>
+                                <li>대한치주과학회 정회원</li>
+                                <li>대한치주과학회 인정의</li>
+                                <li>대한구강악안면임플란트학회 정회원</li>
+                                <li>오스템 임플란트 임상지도의</li>
+                                <li>오스템 연구센터 자문위원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="doctor2">
+                    <div class="left-box">
+                        <img src="images/main/doctor2.png" alt="doctor2">
+                    </div>
+                    <div class="right-box">
+                        <h4>원장 강 한 승</h4>
+                        <p>
+                            "강한 열정을 가지고<br>
+                            최선의 진료를 제공합니다"
+                        </p>
+                        <span>구강외과 전문의</span>
+                        <div class="history">
+                            <ul>
+                                <li>미국치과임플란트학회 인정의</li>
+                                <li>단국대학교 치과대학 졸업</li>
+                                <li>단국대학교 치과대학 외래교수</li>
+                                <li>미국 하버드 치과대학</li>
+                                <li>유럽 임플란트학회 멤버</li>
+                                <li>국제 임플란트 학회 멤버</li>
+                            </ul>
+                            <ul>
+                                <li>대한심미임플란트학회 학술위원</li>
+                                <li>대한구강악안면임플란트학회 정회원</li>
+                                <li>대한치주과학회 인정의</li>
+                                <li>대한구강악안면임플란트학회 정회원</li>
+                                <li>오스템 임플란트 임상지도의</li>
+                                <li>오스템 연구센터 자문위원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="doctor3">
+                    <div class="left-box">
+                        <img src="images/main/doctor3.png" alt="doctor3">
+                    </div>
+                    <div class="right-box">
+                        <h4>원장 김 지 영</h4>
+                        <p>
+                            "환자분들의<br>
+                            아름다운 미소선을 만듭니다"
+                        </p>
+                        <span>교정과 전문의</span>
+                        <div class="history">
+                            <ul>
+                                <li>보건복지부인증 교정과 전문의</li>
+                                <li>단국대학교 치과대학 수석 졸업</li>
+                                <li>단국대학교 치과대학 외래교수</li>
+                                <li>단국대학교 치과대학병원 인턴</li>
+                                <li>서울대학교 보라매병원 교정과 레지던트</li>
+                                <li>대한치과교정학회 정회원</li>
+                            </ul>
+                            <ul>
+                                <li>대한치과교정학회 인정의</li>
+                                <li>미국치과교정학회 정회원</li>
+                                <li>유럽치과교정학회 정회원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section05">
+        <h3>YouTube</h3>
+        <p>환자분들과의 소통을 위한 유튜브 채널을 운영중입니다.</p>
+        <iframe src="https://www.youtube.com/embed/rczJ1z5A-Ds" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+    </div>
+    <div class="section" id="section06">
+        <div class="title">
+            <h3 class="title-en">Principles of care</h3>
+            <h3 class="title-kr">진료원칙</h3>
+            <p>굿플란트치과의원은 이를 지키기 위해 매일 노력하고 있습니다.</p>
+        </div>
+        <ul>
+            <li>
+                <div class="circle-icon">
+                    <img src="images/main/principle-technic.png" alt="Principle1">
+                </div>
+                <h4>지식과 기술의 겸비</h4>
+                <p>
+                    첨단 장비와 함께 다양한 분야의<br>
+                    전문의료인들의 협진으로<br>
+                    정확성과 신속함을 갖춘 전문성 있는 진료
+                </p>
+            </li>
+            <li>
+                <div class="circle-icon">
+                    <img src="images/main/principle-comfortable.png" alt="Principle2">
+                </div>
+                <h4>환자의 편안함</h4>
+                <p>
+                    의료진이 환자와 소통하며 늘 편안한 환경에서<br>
+                    전문성 있는 진료를 제공하고,<br>
+                    환자의 상태를 면밀히 체크하는 세심함
+                </p>
+            </li>
+            <li>
+                <div class="circle-icon">
+                    <img src="images/main/principle-clean.png" alt="Principle3">
+                </div>
+                <h4>깨끗한 진료환경</h4>
+                <p>
+                    1일 1가구 사용원칙을 기준으로<br>
+                    철저한 기기 소독과 전 구역 위생관리,<br>
+                    멸균 시스템을 도입하여 안심할 수 있는 환경
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="section07">
+        <div id="value">
+            <h3>Important value</h3>
+            <p>굿플란트치과의원의 특별함을 소개합니다</p>
+        </div>
+        <div class="contents">
+            <div class="value" id="value1">
+                <p>Goodplant<span>01</span></p>
+                <h4>
+                    보건복지부인증 전문의 8인 원장<br>
+                    각 본과진료 외 <span>통합협진시스템치과</span>
+                </h4>
+                <p>
+                    "대학병원의 분과 시스템을 적용하여<br>
+                    한 가지 치료에도 여러 협진이 가능합니다"
+                </p>
+                <img src="images/main/value1.png" alt="value1">
+            </div>
+            <div class="value" id="value2">
+                <p>Goodplant<span>02</span></p>
+                <h4>
+                    치과의사를 교육하는<br>
+                    연구중심의 <span>학술치과</span>
+                </h4>
+                <p>
+                    "10년간의 다양하고 심도있는 수술경험과<br>
+                    끊임없는 연구와 교육으로 발전하고 있습니다"
+                </p>
+                <img src="images/main/value2.png" alt="value2">
+            </div>
+            <div class="value" id="value3">
+                <p>Goodplant<span>03</span></p>
+                <h4>
+                    진료의 편안함을 위한<br>
+                    <span>무통마취기 도입</span>
+                </h4>
+                <p>
+                    "최첨단장비 투자에 아끼지 않고 오직 환자분들을<br>
+                    생각하며 무통마취기를 도입하였습니다"
+                </p>
+                <img src="images/main/value3.png" alt="value3">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section08">
+        <h3>Medical Reservation</h3>
+        <h4>간편진료예약</h4>
+        <p>굿플란트치과의원은 온라인으로 빠르고 간편한 진료예약이 가능합니다</p>
+        <form name="onlineReservation" id="onlineReservation" autocomplete="off">
+            <ul class="inp_list">
+                <li>
+                    <div class="inp_box">
+                        <select name="gubun" id="reservationGubun">
+                            <option value="">분야선택</option>
+                            <option value="RG_01">치아교정</option>
+                            <option value="RG_02">임플란트</option>
+                            <option value="RG_03">심미보철</option>
+                            <option value="RG_04">일반진료</option>
+                        </select>
+                        <div class="nice-select" tabindex="0"><span class="current">분야선택</span>
+                            <ul class="list">
+                                <li data-value="" class="option focus"><span>분야선택</span></li>
+                                <li data-value="RG_01" class="option"><span class="selected">치아교정</span></li>
+                                <li data-value="RG_02" class="option"><span>임플란트</span></li>
+                                <li data-value="RG_03" class="option"><span>심미보철</span></li>
+                                <li data-value="RG_04" class="option"><span>일반진료</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="inp_box">
+                        <input id="reservationName" name="name" placeholder="* 이름" type="text" maxlength="10">
+                    </div>
+                    <div class="inp_box margin-left">
+                        <input id="reservationPhoneNum" name="phoneNum" class="phoneNumber" placeholder="* 전화번호"
+                            type="text" maxlength="14">
+                    </div>
+                </li>
+                <li>
+                    <div class="inp_box">
+                        <input id="reservationDate" name="reservationDate" placeholder="* 예약일" type="date"
+                            class="hasDatepicker">
+                    </div>
+                    <div class="inp_box">
+                        <input id="reservationTime" name="reservationTime" placeholder="* 예약시간" type="text">
+                    </div>
+                </li>
+                <li>
+                    <div class="check_box">
+                        <label><input type="checkbox" name="agree" value="1"> 개인정보 수집 및 이용동의</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn_box">
+                <button type="button" class="btn" id="onlineReservationBtn">예약하기</button>
+            </div>
+        </form>
+    </div>
+    <div class="section" id="section09">
+        <div class="ctn-wrap">
+            <div class="title">
+                <h3>Review</h3>
+                <p>굿플란트치과의원을 이용한 후기</p>
+                <div class="buttons">
+                    <button class="btn-prev"><span>prev</span></button>
+                    <button class="btn-next"><span>next</span></button>
+                </div>
+            </div>
+            <div class="contents">
+                <ul>
+                    <li>
+                        <img src="images/main/review1.png" alt="review1">
+                        <p>유*지님</p>
+                        <p>만족도 ★★★★★</p>
+                        <p>
+                            항상 올 때마다 친절하게 점검해주시고 제 상태도 매번 체크해주셔서 감사했습니다. 여기서 교정한 덕에 이쁘고 가지 ...
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/main/review2.png" alt="review2">
+                        <p>김*현님</p>
+                        <p>만족도 ★★★★★</p>
+                        <p>
+                            치과에 대한 두려움이 있었는데 굿플란트를 다니면서 치과에 대한 두려움이 사라졌다. 그 이유는 선생님들의 친절함과 ...
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/main/review3.png" alt="review3">
+                        <p>박*영님</p>
+                        <p>만족도 ★★★★★</p>
+                        <p>
+                            딸 교정을 알아보던 중 집과 거리가 있지만 교정과 전문 선생님들이 친절하게 설명해주시고 관리법 등을 자세히 설명 ...
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/main/review4.png" alt="review4">
+                        <p>지*경님</p>
+                        <p>만족도 ★★★★★</p>
+                        <p>
+                            교정 시작하기 전에는 웃을 때 계속 신경 쓰이고 사진에서도 유독 삐뚤어진 치아가 더 잘 보여서 교정을 너무 너무 하고 ...
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/main/review5.png" alt="review5">
+                        <p>조*희님</p>
+                        <p>만족도 ★★★★★</p>
+                        <p>
+                            앞니가 튀어나와서 웃을 때나 사진 찍을 때나 신경 많이 쓰였는데 이제 언제 어디서나 환하게 웃을 수 있을 것 같아요! ...
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section10">
+        <h3>Notice</h3>
+        <p>굿플란트치과의원의 공지사항과 소식을 알려드립니다</p>
+        <div class="contents">
+            <div class="buttons">
+                <button class="btn-prev"><span>prev</span></button>
+                <button class="btn-next"><span>next</span></button>
+            </div>
+            <ul id="notice-slide">
+                <li>
+                    <ul class="notice-slide">
+                        <li>
+                            <a href="sub.html">
+                                <img src="images/main/notice1.png" alt="notice1">
+                                <p>대체공휴일(29일) 정상진료</p>
+                                <p>
+                                    5월 29일 월요일은 석가탄신일 대체공휴일이나, 정상진료하오니 참고 바랍니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                <img src="images/main/notice2.png" alt="notice2">
+                                <p>13주년 이벤트</p>
+                                <p>
+                                    굿플란트치과의원이 13주년을 맞은 기념으로 할인 이벤트를 진행합니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                <img src="images/main/notice3.png" alt="notice3">
+                                <p>나비치아 교정 소개</p>
+                                <p>
+                                    틀어진 앞니를 완벽하게 돌리고 싶다구요? 그렇다면 나비치아 교정을 소개합니다.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="notice-slide">
+                        <li>
+                            <a href="sub.html">
+                                <img src="images/main/notice4.png" alt="notice4">
+                                <p>삼일절 휴진 안내</p>
+                                <p>
+                                    3월 1일 수요일은 공휴일이며, 휴진합니다.<br> 진료 일정에 참고 부탁드립니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                <img src="images/main/notice5.png" alt="notice5">
+                                <p>겨울방학 이벤트</p>
+                                <p>
+                                    겨울방학시즌을 맞이하여 학생과 부모님이 같이 할인받을 수 있게 이벤트를 열었습니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                <img src="images/main/notice6.png" alt="notice6">
+                                <p>굿플란트에서의 구강검진</p>
+                                <p>
+                                    정기적인 검진으로 치아를 항상 건강하게! 굿플란트에서 더욱 더 세심하게 봐드립니다.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section11">
+        <div class="title">
+            <h3 class="title-en">DETAIL INTERIOR</h3>
+            <h3 class="title-kr">내부 둘러보기</h3>
+            <p>굿플란트치과의원의 시설안내</p>
+        </div>
+        <div class="contents">
+            <div id="in-slide">
+                <ul id="in-slide-img">
+                    <li>
+                        <img src="images/main/interior1.png" alt="in-slide-img1">
+                    </li>
+                    <li>
+                        <img src="images/main/interior2.png" alt="in-slide-img2">
+                    </li>
+                    <li>
+                        <img src="images/main/interior3.png" alt="in-slide-img3">
+                    </li>
+                    <li>
+                        <img src="images/main/interior4.png" alt="in-slide-img4">
+                    </li>
+                </ul>
+                <div id="in-slide-ctn">
+                    <div id="in-slide-txt">
+                        <ul>
+                            <li>
+                                <p>
+                                    <b>01 </b>환자분들의 편안한 공간이 될 수 있도록<br>
+                                    디테일로 완성된 치료시설
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>02 </b>깔끔하고 모던한 분위기로 환자분들에게<br>
+                                    신뢰감을 주는 인포데스크
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>03 </b>치과치료를 두려워하시는 환자분들을 위한<br>
+                                    안전인증된 수면임플란트센터
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>04 </b>멸균된 장비들과 완벽한 소독시스템으로 <br>
+                                    깨끗하고 무결한 수술실
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-prev"><span>prev</span></button>
+                        <button class="btn-next"><span>next</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section12">
+        <h3>Info</h3>
+        <p>굿플란트치과의원의 진료시간과 전화번호, 오시는 길 안내</p>
+        <div class="contents">
+            <div class="left-box">
+                <div class="information info1">
+                    <h4>오시는 길</h4>
+                    <p>서울 송파구 거마로 4 (거여동 37-6 B1층, 4층, 5층, 6층)</p>
+                    <ul>
+                        <li>
+                            <p>일반과</p>
+                            <p>02.430.9998</p>
+                        </li>
+                        <li>
+                            <p>교정과</p>
+                            <p>02.430.9942</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information info2">
+                    <h4>진료시간</h4>
+                    <ul>
+                        <li>
+                            <p>일반과</p>
+                            <p>(일요일, 공휴일 휴진)</p>
+                            <ul class="medical-time">
+                                <li>월, 수 : 오전 10:00 ~ 오후 9:00</li>
+                                <li>화, 목, 금 : 오전 10:00 ~ 오후 7:00</li>
+                                <li>토요일 : 오전 10:00 ~ 오후 2:00</li>
+                                <li>점심시간 : 오후 1:00 ~ 오후 2:00</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>교정과</p>
+                            <p>(목요일, 일요일, 공휴일 휴진)</p>
+                            <ul class="medical-time">
+                                <li>월, 수 : 오후 2:00 ~ 오후 9:00</li>
+                                <li>화, 금 : 오전 10:00 ~ 오후 7:00</li>
+                                <li>토요일 : 오전 09:00 ~ 오후 2:00</li>
+                                <li>점심시간 : 오후 1:00 ~ 오후 2:00</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-box"></div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer1200">
+            <div class="ft-left">
+                <div id="ft-logo">
+                    <a href="index.html">
+                        <img src="images/footer-logo.png" alt="ft-logo">
+                    </a>
+                </div>
+                <p>
+                    서울 송파구 거마로 4 (거여동 37-6 B1층, 4층, 5층, 6층)<br>
+                    사업자등록번호 : 623.30.00585<br>
+                    대표자 : 장영은<br>
+                    &copy;굿플란트치과의원
+                </p>
+            </div>
+            <div class="ft-right">
+                <ul>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일무단수집거부</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/kakao.svg" alt="kakao">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/blog.svg" alt="blog">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/youtube.svg" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="go-top">
+        <span>
+            ^<br>
+            TOP
+        </span>
+    </a>
+</body>
+
+</html>

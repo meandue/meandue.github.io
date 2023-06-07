@@ -1,0 +1,1361 @@
+/* 전체 페이지 공통 */
+html, body {
+    font-family: 'Libre Caslon Text', 'serif';
+    font-weight: bold;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {overflow-X: hidden;}
+
+.page {
+    position: relative;
+    background-image: url("../images/backgrounds.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+a:hover, button:hover {cursor: pointer;}
+
+/* 마우스 커서 커스텀 */
+#cursor {
+position: absolute;
+z-index: 9999;
+transform: translate(10%, 10%);
+background-image: url("../images/cursor-smile.svg");
+background-size: contain;
+width: 45px;
+height: 45px;
+pointer-events: none;
+}
+
+/* 롤링바 */
+#rollingBar {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #000000;
+    z-index: 100;
+}
+#rolling {
+    position: relative;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: hidden;
+}
+#rolling > ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+}
+#rolling > ul > li {
+    text-align: center;
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    cursor: default;
+}
+
+/* ---------------------------------- */
+/* 첫번째 페이지 */
+#house {
+    width: 1200px;
+    height: 493.5px;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+#house > #house_shape {
+    width: 600px;
+    height: 100%;
+    transform: translateX(50%);
+}
+
+#house > #house_shape:hover {
+    cursor: pointer;
+}
+
+#typo1 {
+    position: absolute;
+    width: 500px;
+    height: 148.05px;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+    z-index: 10;
+}
+
+#typo1:hover {
+    cursor: pointer;
+}
+
+#typo2 {
+    position: absolute;
+    width: 500px;
+    height: 148.05px;
+    bottom: 0;
+    right: 7.5%;
+    transform: translateX(-7.5%);
+    z-index: 10;
+}
+
+#typo2:hover {
+    cursor: pointer;
+}
+
+#house > span {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: default;
+}
+#light {
+    position: absolute;
+    width: 200px;
+    height: 30%;
+    top: 80px;
+    right: 20%;
+}
+
+#light > #light_shape {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#light > #light_shape:hover {
+    cursor: pointer;
+}
+
+#light > span {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: default;
+}
+
+/* ---------------------------------- */
+/* 두번째 페이지 */
+    #second_page {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/background-second3.png");
+    background-repeat: no-repeat;
+}
+
+#contents {
+    position: relative;
+    top:0;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 100%;
+}
+
+/* 오디오 메뉴바 */
+#contents > #menu {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    bottom: 0;
+    left: 0;
+}
+
+#contents > #menu > img {
+    display: block;
+    float: left;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 400px;
+}
+
+#contents > #menu > ul {
+    float: left;
+    height: 400px;
+    margin-top: 28px;
+}
+
+#contents > #menu > ul > li {
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#contents > #menu > ul > li:hover {
+    color: #feca36;
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+/* 거울 */
+#contents > #mirror {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+#contents > #mirror > img {
+    display: block;
+    width: 70px;
+    height: 100px;
+}
+
+/* 액자들 */
+#contents > #gallery {
+    position: absolute;
+    top: 120px;
+    left: 500px;
+}
+
+#contents > #gallery > img {
+    display: block;
+    float: left;
+    top: 0;
+    width: 70px;
+    height: 100px;
+    margin: 10px;
+}
+
+#contents > #gallery > #gallery2_ai:hover {
+    cursor: pointer;
+}
+
+#gallery > span {
+    position: absolute;
+    display: block;
+    top: 105%;
+    left: 50%;
+    width: 100%;
+}
+
+
+/* 스탠드조명 */
+#contents > #stand {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    width: 200px;
+    height: 250px;
+
+}
+
+#contents > #stand > #stand_ai {
+    display: block;
+    float: right;
+    width: 100px;
+    height: 250px;
+}
+
+#contents > #stand > #stand_ai:hover {
+    cursor: pointer;
+}
+
+#contents > #stand > span {
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: 20px;
+}
+
+/* 소파 */
+#contents > #sofa {
+    position: absolute;
+    top: 280px;
+    left: 500px;
+}
+
+#contents > #sofa > img {
+    display: block;
+    width: 350px;
+    height: 320px;
+}
+
+/* 피아노 */
+#contents > #piano {
+    position: absolute;
+    top: 320px;
+    right: 50px;
+}
+
+#contents > #piano > #piano_ai {
+    display: block;
+    float: left;
+    width: 240px;
+    height: 200px;
+}
+
+#contents > #piano > #piano_ai:hover {
+    cursor: pointer;
+}
+
+#contents > #piano > span {
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: 30%;
+    width: 100%;
+}
+
+/* 토끼 */
+#contents > #rabbit {
+    position: absolute;
+    top: 540px;
+    left: 400px;
+}
+
+#contents > #rabbit > img {
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+
+/* 테이블 */
+#contents > #table {
+    position: absolute;
+    top: 500px;
+    left: 550px;
+}
+
+#contents > #table > img {
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+
+/* 턴테이블 */
+#contents > #player {
+    position: absolute;
+    bottom: 0;
+    width: 220px;
+    height: 180px;
+    left: 500px;
+}
+
+#contents > #player > #player_ai {
+    display: block;
+    bottom: 0;
+    width: 220px;
+    height: 180px;
+}
+
+#contents > #player > #player_ai:hover {
+    cursor: pointer;
+}
+
+#contents > #player > span {
+    display: block;
+    position:absolute;
+    top: -20%;
+    left: 10%;
+}
+
+/* 컴퓨터 */
+#contents > #computer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 350px;
+}
+
+#contents > #computer > #computer_ai {
+    display: block;
+    width: 500px;
+    height: 350px;
+}
+
+#contents > #computer > #computer_ai {
+    cursor: pointer;
+}
+
+#contents > #computer > span {
+    position:absolute;
+    display: block;
+    top: 10%;
+    left: 25%;
+}
+
+/* 오버레이창 */
+#overlay {
+    position: relative;
+    display: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    z-index: 1000;
+    width: 1200px;
+    height: 959.27px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* aside와 #wrap 영역을 묶는 박스 */
+#box {
+    position: absolute;
+    width: 1140px;
+    height: 912px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 닫기 버튼 */
+#close {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    background-image: url("../images/close.svg");
+    z-index: 10;
+}
+
+#close:hover {
+    transform: rotate(90deg);
+    transition-duration: 400ms;
+    cursor: pointer;}
+
+/* 사이드바 */
+aside {
+    position: absolute;
+    display: block;
+    border: 2px solid #aaaaaa;
+    width: 280px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* 메뉴 타이틀과 카테고리들 */
+aside > .category {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    cursor: default;
+}
+
+aside > .category > h2 {
+    width: 100%;
+    top: 0;
+    font-size: 48px;
+}
+
+aside > .category > ul {
+    width: 100%;
+    height: 50%;
+    margin-top: 30%;
+}
+aside > .category > ul > li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+aside > .category > ul > li:hover {
+    background-color: #000000;
+    color: #feca36;
+    cursor: pointer;
+}
+
+aside > .category > ul > li.on {
+    background-color: #000000;
+    color: #feca36;
+}
+
+/* 사이드바_태그 */
+#tag {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #eaeaea;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: default;
+}
+
+#tag_info {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tag_info > ul > li {
+    margin-bottom: 7%;
+}
+
+#tag_info > ul > li:first-child {
+    font-size: 21px;
+}
+
+#tag_info > ul > li:nth-child(2) {
+    font-size: 15px;
+}
+
+#tag_info > ul > .icons {
+    width: 100%;
+    height: 30px;
+}
+
+#tag_info > ul > .icons > img {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#tag_info > ul > .lighter {
+    display: block;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#tag_info > ul > li:last-child {
+    width: 35px;
+    height: 23px;
+    left: 0;
+}
+
+
+
+/* #wrap 박스  */
+#wrap {
+    position: absolute;
+    display: block;
+    border: 2px solid #aaaaaa;
+    width: 820px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 컨텐츠들을 묶는 박스 */
+#ctn_bx {
+    position: absolute;
+    width: 780px;
+    height: 730px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
+
+#ctn_bx > div {display: block;}
+
+
+
+
+/* ------------------------------------------ */
+/* profile 내용 */
+#introduce {
+    top: 0;
+    width: 100%;
+    height: 292px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+#introduce::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+#introduce > img {
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+#introduce > #typing {
+    width: 50%;
+    height: 80%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+.designer {
+    font-size: 20px;
+    color: #cccccc;
+}
+
+#type {
+    font-size: 27px;
+    width: 400px;
+    height: 150px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+#type::after {
+    content:"";
+    border-right: 3px solid #feca36;
+    margin-left: 3px;
+}
+
+#information {
+    bottom: 0;
+    width: 100%;
+    height: 388px;
+    font-size: 23px;
+    animation: move 2s 1;
+}
+
+.info1 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+}
+
+.info1 > ul {
+    width: 100%;
+    height: 100%;
+}
+
+.info1 > ul > li {
+    width: 100%;
+    height: 22%;
+    margin-bottom:4%;
+}
+
+.info1 > ul > li > h2 {
+    width: 100%;
+    height: 50%;
+    color: #777777;
+}
+
+.info2 {
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+
+.info2 > ul {
+    width: 100%;
+    height: 100%;
+}
+
+.info2 > ul > li {
+    width: 100%;
+    height: 50%;
+}
+
+.info2 > ul > li > h2 {
+    width: 100%;
+    height: 25%;
+    color: #777777;
+}
+
+.info2 > ul > li > .experience {
+    margin-top: 10%;
+}
+
+.info2 > ul > li > p {
+    width: 100%;
+    height: 25%;
+    font-size: 21px;
+}
+
+.info2 > ul > li > p > span {
+    color: #cccccc;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* skills 내용 */
+.programs {
+    width: 100%;
+    height: 365px;
+    top: 0;
+}
+
+.programs > ul {
+    float: left;
+    width: 50%;
+    height: 70%;
+}
+.programs > ul > li {
+    width: 100%;
+    height: 30%;
+}
+
+.programs > ul > li > img {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.programs > ul > li > div {
+    float: left;
+    width: 290px;
+    height: 45%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transform: translate(3%, 50%);
+}
+
+.skills > div > ul > li > div > .per80 {
+    width: 80%;
+    display: block;
+    height: 100%;
+    line-height: 35px;
+    border-radius: 20px;
+    background: #feca36;
+    text-align: right;
+    padding: 0 10px;
+    animation: stack80 1.5s 1;
+    color: #fff;
+}
+.skills > div > ul > li > div > .per70 {
+    width: 70%;
+    display: block;
+    height: 100%;
+    line-height: 35px;
+    border-radius: 20px;
+    background: #feca36;
+    text-align: right;
+    padding: 0 10px;
+    animation: stack70 1.5s 1;
+    color: #fff;
+}
+.skills > div > ul > li > div > .per50 {
+    width: 50%;
+    display: block;
+    height: 100%;
+    line-height: 35px;
+    border-radius: 20px;
+    background: #feca36;
+    text-align: right;
+    padding: 0 10px;
+    animation: stack50 1.5s 1;
+    color: #fff;
+}
+
+@keyframes stack80 {
+    0% {width: 0; color: rgba(255, 255, 255, 0);}
+    40% { color: rgba(255, 255, 255, 1);}
+    100% {width: 80%;}
+}
+@keyframes stack70 {
+    0% {width: 0; color: rgba(255, 255, 255, 0);}
+    40% { color: rgba(255, 255, 255, 1);}
+    100% {width: 70%;}
+}
+@keyframes stack50 {
+    0% {width: 0; color: rgba(255, 255, 255, 0);}
+    40% { color: rgba(255, 255, 255, 1);}
+    100% {width: 50%;}
+}
+
+.languages {
+    width: 100%;
+    height: 365px;
+}
+
+.languages > ul {
+    width: 100%;
+    height: 80%;
+}
+.languages > ul > li {
+    width: 100%;
+    height: 25%;
+}
+.languages > ul > li > p {
+    float: left;
+    width: 30%;
+    height: 45%;
+    transform: translateY(20%);
+    font-size: 23px;
+}
+
+.languages > ul > li > div {
+    float: left;
+    display: block;
+    width: 350px;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.skills > div > h2 {
+    font-size: 23px;
+    color: #777777;
+    width: 100%;
+    height: 20%;
+}
+
+/* certificate 내용 */
+.certificate > .license {
+    top: 0;
+    width: 624px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.certificate > .license > img {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 100%;
+
+}
+
+.certificate > .date {
+    width: 100%;
+    height: 292px;
+    margin-top: 38px;
+    animation: move 2s 1;
+}
+
+.date > ul {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.date > ul > li {
+    width: 100%;
+    height: 33.33%;
+}
+
+.date > ul > li > h2 {
+    float: left;
+    font-size: 23px;
+    color: #777777;
+    width: 30%;
+    height: 100%;
+}
+
+.date > ul > li > p {
+    float: left;
+    font-size: 23px;
+    width: 70%;
+    height: 100%;
+}
+
+/* site 내용 */
+#ctn_bx > .site {
+    width: 100%;
+    height: 100%;
+}
+
+.site_top {
+    width: 100%;
+    height: 73px;
+}
+
+.site_name {
+    float: left;
+    display: block;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    transform: translateX(20%);
+    overflow: hidden;
+}
+
+.site_name > div {
+    width: 100%;
+    height: 100%;
+}
+
+.site_name > div > h2 {
+    color: #777777;
+    font-size: 20px;
+}
+
+.site_name > div > p {
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+
+.site_btn {
+    float: right;
+    display: block;
+    top: 0;
+    width: 40%;
+    height: 80%;
+    font-size: 20px;
+    transform: translate(-10%, 30%);
+    overflow: hidden;
+}
+
+.site_btn > div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.site_btn > div > a {
+    position: relative;
+    float: left;
+    display: block;
+    width: 142px;
+    height: 35px;
+    border: 2px solid #000000;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+    padding-top: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.site_btn > div > a::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #feca36;
+    top: 100%;
+    left: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.site_btn > div > a:hover::before {
+    transform: translateY(-100%);
+}
+
+
+.site_center {
+    position: relative;
+    width: 100%;
+    height: 584px;
+}
+
+.site_center > img {
+    width: 100%;
+    height: 100%;
+}
+
+.site_box {
+    position: absolute;
+    top: 33px;
+    left: 59px;
+    width: 662px;
+    height: 370px;
+    overflow: hidden;
+}
+
+.site_box > .site_img {
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+}
+
+.site_box > .site_img::after {content : ""; display: block; clear: both;}
+
+.site_box > .site_img > img {
+    float: left;
+    width: 33.3333333333%;
+    height: auto;
+    transition-duration: 2s;
+}
+
+.site_img > .goodplant:hover {
+    transform: translateY(-92%);
+}
+
+.site_img > .tamburins:hover {
+    transform: translateY(-90%);
+}
+
+
+.site_img > .milkyshop:hover {
+    transform: translateY(-90%);
+}
+
+.site_box > button {
+    position: absolute;
+    display: none;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    outline: none;
+    background-color: #f9f9f9;
+    top: 150px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.site_box > button:hover {
+    opacity: 1;
+    background-color: #feca36;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+
+.site_bottom {
+    width: 100%;
+    height: 73px;
+    font-size: 16px;
+}
+
+.site_bottom > .site_info {
+    top: 0;
+    display: block;
+    width: 50%;
+    height: 50px;
+    transform: translateX(50%);
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.site_bottom > .site_info > div > p {
+    margin-bottom: 10px;
+}
+
+/* banner 내용 */
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.banner > .banners {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    overflow: auto;
+}
+
+.banners > li {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 45%;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+
+.banners > li:hover {
+    cursor: pointer;
+}
+
+.banners > li > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+
+.banners > li > .shortH{
+    height: 100%;
+}
+.banners > li > span {
+    display: block;
+    position: absolute;
+    background: #000;
+    z-index: 100;
+}
+
+/* detail 내용 */
+.detail {
+    width: 100%;
+    height: 100%;
+}
+
+.detail > .details {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    overflow: auto;
+}
+
+.details > li {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+
+.details > li:hover {
+    cursor: pointer;
+}
+
+.details > li > img {
+    position: absolute;
+    z-index: 2;
+    width: auto;
+    height: auto;
+}
+
+.details > li > span {
+    display: block;
+    position: absolute;
+    background: #000;
+    z-index: 100;
+}
+
+/* graphic 내용 */
+.graphic {
+    width: 100%;
+    height: 100%;
+}
+
+.graphic > .graphics {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    overflow: auto;
+}
+
+.graphics > li {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 45%;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+
+.graphics > li:hover {
+    cursor: pointer;
+}
+
+.graphics > li > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+.graphics > li > span {
+    display: block;
+    position: absolute;
+    background: #000;
+    z-index: 100;
+}
+
+/* 호버시 테두리 그려지는 효과 */
+.banners > li > span:nth-child(1) {top: 0; height: 5px; width: 0;}
+.banners > li > span:nth-child(2) {top: 0; right: 0; width: 5px; height: 0;}
+.banners > li > span:nth-child(3) {bottom: 0; right: 0; height: 5px; width: 0;}
+.banners > li > span:nth-child(4) {bottom: 0; left: 0; width: 5px; height: 0;}
+
+.banners > li:hover > span:nth-child(1) {width: 100%; transition: all 0.3s;}
+.banners > li:hover > span:nth-child(2) {height: 100%; transition: all 0.3s; transition-delay: 0.3s;}
+.banners > li:hover > span:nth-child(3) {width: 100%; transition: all 0.3s; transition-delay: 0.6s;}
+.banners > li:hover > span:nth-child(4) {height: 100%; transition: all 0.3s; transition-delay: 0.9s;}
+
+
+.details > li > span:nth-child(1) {top: 0; height: 5px; width: 0;}
+.details > li > span:nth-child(2) {top: 0; right: 0; width: 5px; height: 0;}
+.details > li > span:nth-child(3) {bottom: 0; right: 0; height: 5px; width: 0;}
+.details > li > span:nth-child(4) {bottom: 0; left: 0; width: 5px; height: 0;}
+
+.details > li:hover > span:nth-child(1) {width: 100%; transition: all 0.3s;}
+.details > li:hover > span:nth-child(2) {height: 100%; transition: all 0.3s; transition-delay: 0.3s;}
+.details > li:hover > span:nth-child(3) {width: 100%; transition: all 0.3s; transition-delay: 0.6s;}
+.details > li:hover > span:nth-child(4) {height: 100%; transition: all 0.3s; transition-delay: 0.9s;}
+
+
+.graphics > li > span:nth-child(1) {top: 0; height: 5px; width: 0;}
+.graphics > li > span:nth-child(2) {top: 0; right: 0; width: 5px; height: 0;}
+.graphics > li > span:nth-child(3) {bottom: 0; right: 0; height: 5px; width: 0;}
+.graphics > li > span:nth-child(4) {bottom: 0; left: 0; width: 5px; height: 0;}
+
+.graphics > li:hover > span:nth-child(1) {width: 100%; transition: all 0.3s;}
+.graphics > li:hover > span:nth-child(2) {height: 100%; transition: all 0.3s; transition-delay: 0.3s;}
+.graphics > li:hover > span:nth-child(3) {width: 100%; transition: all 0.3s; transition-delay: 0.6s;}
+.graphics > li:hover > span:nth-child(4) {height: 100%; transition: all 0.3s; transition-delay: 0.9s;}
+
+/* 배너, 상세페이지, 그래픽 요소 클릭시 나타나는 창 */
+#fade {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+    z-index: 2000;
+}
+
+#photo { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 75%;
+    max-height: 75%;
+    display: block;
+}
+
+  #close_btn {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    top: 50px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/close.png") no-repeat center / cover;
+  }
+
+  #fade > button > span {display: none;}
+
+
+/* 세번째 페이지 */
+
+#contact {
+    width: 1141.8px;
+    height: 678.3px;
+    text-align: center;
+    transform: translateY(25%);
+    margin: 0 auto;
+    cursor: default;
+}
+#contact > h1 {
+    font-size: 50px;
+    width: 100%;
+    height: 101.73px;
+    
+}
+#lp_player {
+    width: 660px;
+    height: 430px;
+    transform: translateX(55%);
+    margin-bottom: 60px;
+}
+#lp_player > #div_lp {
+    float: left;
+    width: 430;
+    height: 430px;
+}
+
+#lp_player > #div_lp > img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* lp판 회전시키기 */
+.rotate {
+    animation: rotation 3s;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#lp_player > #div_stick {
+    float: left;
+    width: 230px;
+    height: 427.31px;
+    z-index: 100;
+    transform: translateX(-70%);
+}
+
+#lp_player > #div_stick > img {
+    width: 100%;
+    height: 100%;
+    transform-origin: 90% 10%;
+    transition-duration: 500ms;
+}
+
+#lp_player > #div_stick > img:hover {
+    transform: rotate(-30deg);
+}
+
+
+#call {
+    width: 100%;
+    height: 15%;
+}
+#call > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 일러스트 안내 문구 숨기기 */
+#contents > #stand > span {display: none;}
+#contents > #gallery > span {display: none;}
+#contents > #piano > span {display: none;}
+#contents > #player > span {display: none;}
+#contents > #computer > span {display: none;}

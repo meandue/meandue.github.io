@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MilkyShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&family=Poppins:wght@700&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub2-style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/sub2-script.js"></script>
+</head>
+
+<body>
+    <!-- 헤더 시작 -->
+    <div id="header">
+        <div id="container">
+            <ul>
+                <li>
+                    <a href="#">밀키샵</a>
+                    <ul class="sub nav1">
+                        <li>
+                            <a href="#">브랜드소개</a>
+                        </li>
+                        <li>
+                            <a href="#">히스토리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub-index.html">메뉴소개</a>
+                    <ul class="sub nav2">
+                        <li>
+                            <a href="sub.html">BEST</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">NEW</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">도넛</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">크로넛</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">파이</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">꽈배기</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">음료</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예약하기</a>
+                    <ul class="sub nav3">
+                        <li>
+                            <a href="#">예약안내</a>
+                        </li>
+                        <li>
+                            <a href="#">예약하기</a>
+                        </li>
+                        <li>
+                            <a href="#">예약확인</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="index.html" class="main_logo">
+                <img src="images/main-logo.svg" alt="main_logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="sub nav4">
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">소통하기</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">프랜차이즈</a>
+                    <ul class="sub nav5">
+                        <li>
+                            <a href="#">가맹절차</a>
+                        </li>
+                        <li>
+                            <a href="#">가맹문의</a>
+                        </li>
+                        <li>
+                            <a href="#">지점안내</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="account">
+                    <a href="#">
+                        <img src="images/login.svg" alt="login">
+                    </a>
+                    <a href="#">
+                        <img src="images/join.svg" alt="join">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 헤더 끝 -->
+
+    <div id="ctn_wrap">
+        <div id="contents">
+            <div class="side_bx">
+                <h1>MILKYSHOP</h1>
+            </div>
+            <!-- 메뉴 정보 -->
+            <div class="menu_info">
+                <div class="left_bx">
+                    <img src="images/sub2/cronut.png" alt="product">
+                </div>
+                <div class="right_bx">
+                    <div class="menu_top">
+                        <p id="menu_name">MILK CRONUT</p>
+                        <div class="title">
+                            <h3>우유크로넛</h3>
+                            <p>4,500원</p>
+                        </div>
+                        <p id="menu_comment">스마일 미소가 매력적인 달콤한 우유크림 크로넛</p>
+                    </div>
+                    <div class="menu_bottom">
+                        <div class="panel_box active">
+                            <div class="panel_head">
+                                <h4>제품 영양 정보</h4>
+                                <div class="icons">
+                                    <img src="images/sub2/vert-icon.svg" alt="vert-icon">
+                                    <img src="images/sub2/hor-icon.svg" alt="hor-icon">
+                                </div>
+                            </div>
+                            <div class="panel_body">
+                                <div class="nutrion">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    중량<br>
+                                                    (g/ml)
+                                                </th>
+                                                <th>
+                                                    열량<br>
+                                                    (kcal)
+                                                </th>
+                                                <th>
+                                                    당류<br>
+                                                    (g)
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>134</td>
+                                                <td>421</td>
+                                                <td>30</td>
+                                            </tr>
+                                        </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    단백질<br>
+                                                    g(%)
+                                                </th>
+                                                <th>
+                                                    포화지방<br>
+                                                    g(%)
+                                                </th>
+                                                <th>
+                                                    나트륨<br>
+                                                    mg(%)
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8(14)</td>
+                                                <td>6(22)</td>
+                                                <td>227(15)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel_box">
+                            <div class="panel_head">
+                                <h4>알레르기 성분</h4>
+                                <div class="icons">
+                                    <img src="images/sub2/vert-icon.svg" alt="vert-icon">
+                                    <img src="images/sub2/hor-icon.svg" alt="hor-icon">
+                                </div>
+                            </div>
+                            <div class="panel_body">
+                                <div class="allergy">
+                                    <p>밀, 우유, 대두</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 추천 메뉴 -->
+            <div class="recommend">
+                <h3>RECOMMEND</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="menu_img">
+                                <img src="images/sub1/cronut6.png" alt="cronut1">
+                            </div>
+                            <div class="menu_name">
+                                <div class="name_kr">황치즈크로넛</div>
+                                <div class="name_en">YELLOW CHEESE CRONUT</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="menu_img">
+                                <img src="images/sub1/cronut7.png" alt="cronut1">
+                            </div>
+                            <div class="menu_name">
+                                <div class="name_kr">바질토마토크로넛</div>
+                                <div class="name_en">BASIL TOMATO CRONUT</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub2.html">
+                            <div class="menu_img">
+                                <img src="images/sub1/cronut8.png" alt="cronut8">
+                            </div>
+                            <div class="menu_name">
+                                <div class="name_kr">로투스크로넛</div>
+                                <div class="name_en">LOTUS CRONUT</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 나가기 버튼 -->
+            <div class="pattern">
+                <a href="sub.html" id="btn_list">GO TO LIST</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 시작 -->
+    <div id="footer">
+        <div id="ft_logo">
+            <a href="index.html">
+                <img src="images/footer-logo.svg" alt="footer_logo">
+            </a>
+        </div>
+        <div id="ft_sns">
+            <div class="icons">
+                <img src="images/sns1.png" alt="sns1">
+                <img src="images/sns2.png" alt="sns2">
+                <img src="images/sns3.png" alt="sns3">
+            </div>
+        </div>
+        <div id="ft_menu">
+            <ul>
+                <li>
+                    <a href="#">밀키샵 소개</a>
+                </li>
+                <li>
+                    <a href="#">제휴/제안</a>
+                </li>
+                <li>
+                    <a href="#">고객상담</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+            </ul>
+        </div>
+        <div id="ft_info">
+            <p>
+                주소 : 광주광역시 광산구 수완동 1601(본점) | 도로명주소 : 광주 광산구 수완로 50번길 59 1층 밀키샵(빨간색 문)
+            </p>
+            <p>
+                대표 : 최태임 | 사업자등록번호 : 508-14-93126 | 전화 : 062-959-9223
+            </p>
+        </div>
+    </div>
+    <!-- 푸터 끝 -->
+
+    <a href="#" class="go_top">
+        <div>TOP</div>
+    </a>
+
+</body>
+
+</html>

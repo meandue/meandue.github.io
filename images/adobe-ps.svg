@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 78 76" style="enable-background:new 0 0 78 76;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'AdobeClean-Bold';}
+	.st1{font-size:47.4083px;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<font horiz-adv-x="1000">
+<!-- This font is intended for limited use by Adobe software, technology and authorized users. Any unauthorized installation, transfer and/or use of this font is strictly prohibited. Adobe Clean is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="AdobeClean-Bold" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M80,50l170,255l170,-255M279,350l171,255l0,-510M50,605l170,-255l-170,-255M80,650l340,0l-170,-255z"/>
+<glyph unicode="P" horiz-adv-x="567" d="M74,7C74,2 77,0 82,0l105,0C193,0 195,3 195,8l0,205C218,213 226,213 258,213C409,213 532,282 532,441C532,551 460,659 266,659C193,659 119,657 81,656C76,656 74,653 74,648M195,552C206,553 234,554 269,554C361,554 413,511 413,438C413,347 342,319 258,319C225,319 212,319 195,320z"/>
+<glyph unicode="s" horiz-adv-x="400" d="M338,377C344,375 347,378 347,383l0,88C347,476 346,480 341,483C317,495 273,503 215,503C90,503 28,432 28,356C28,284 67,239 176,199C238,174 257,158 257,133C257,107 232,89 180,89C135,89 80,101 37,129C33,131 29,129 29,124l0,-95C29,23 31,21 36,18C66,1 118,-10 177,-10C300,-10 374,49 374,143C374,214 335,259 221,301C157,326 142,341 142,363C142,384 160,406 213,406C257,406 307,394 338,377z"/>
+</font>
+
+	<text transform="matrix(1 0 0 1 15.9601 52.033)" class="st0 st1">Ps</text>
+<path class="st2" d="M64.79,73.17H13.21c-5.45,0-9.88-4.42-9.88-9.88V12.7c0-5.45,4.42-9.88,9.88-9.88h51.57
+	c5.45,0,9.88,4.42,9.88,9.88V63.3C74.66,68.75,70.24,73.17,64.79,73.17z"/>
+</svg>

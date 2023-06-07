@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 260 215" style="enable-background:new 0 0 260 215;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EAEAEA;}
+	.st1{fill:#333333;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="234.62,39.79 216.23,39.79 215.51,39.18 214.86,67.85 37.48,66.65 37.54,50.8 3.75,72.89 3.75,211.89 
+	255.8,211.89 255.8,72.89 "/>
+<path class="st1" d="M214.86,67.85l0.65-28.67l-1.2-1.01l-6.09-13.94l-10.49-0.07c2.02-1.64,3.12-3.37,3.12-5.16
+	c0-9.91-33.03-17.94-73.77-17.94S53.31,9.1,53.31,19.01c0,2.12,1.52,4.16,4.3,6.04l-0.79,0.1L37.64,38.13v12.62l-0.09,0.06
+	l-0.06,15.84L214.86,67.85z"/>
+<g>
+	<ellipse class="st2" cx="126.92" cy="20.17" rx="73.77" ry="17.94"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="3.45" ry="0.99"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<ellipse class="st2" cx="126.92" cy="17.03" rx="28.28" ry="8.08"/>
+	<polygon class="st2" points="37.48,67.81 37.48,39.29 214.86,40.71 214.86,69.02 	"/>
+	<line class="st2" x1="37.48" y1="39.29" x2="56.67" y2="26.32"/>
+	<polyline class="st2" points="255.65,74.06 234.47,40.95 214.86,40.95 208.07,25.4 197.5,25.4 	"/>
+	<rect x="48.76" y="46.14" class="st2" width="29.61" height="16.07"/>
+	<polyline class="st2" points="106.64,54.18 100.01,54.18 100.01,47.97 113.83,47.97 113.83,54.18 110.83,54.18 	"/>
+	<polyline class="st2" points="144.09,54.18 138.64,54.18 138.64,47.97 152.46,47.97 152.46,54.18 147.37,54.18 	"/>
+	<rect x="117.87" y="47.97" class="st2" width="16.6" height="6.2"/>
+	<rect x="171.28" y="46.14" class="st2" width="29.61" height="16.07"/>
+	<path class="st2" d="M109.48,51.78c0,0,1.53,8.54,16.69,8.97c17.55,0.49,18.89-8.97,18.89-8.97h2.3c0,0-0.09,13.44-20.68,13.07
+		c-20.59-0.38-20.21-13.07-20.21-13.07H109.48z"/>
+	<rect x="3.6" y="74.06" class="st2" width="252.05" height="139"/>
+	<rect x="10.94" y="82.19" class="st2" width="118.68" height="122.22"/>
+	<rect x="129.77" y="82.19" class="st2" width="118.68" height="122.22"/>
+	<line class="st2" x1="3.6" y1="74.06" x2="37.68" y2="51.78"/>
+</g>
+</svg>

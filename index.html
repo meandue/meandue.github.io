@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jeong Minju Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <!-- 마우스 커서 커스텀 시작 -->
+    <div id="cursor"></div>
+    <!-- 마우스 커서 커스텀 끝 -->
+
+    <!-- 상단 고정 롤링 바 시작 -->
+    <div id="rollingBar">
+        <div id="rolling">
+            <ul>
+                <li>WELCOME TO MY PORTFOLIO</li>
+                <li>DESIGNED BY JEONG MINJU</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 상단 고정 롤링 바 끝 -->
+
+    <!-- 첫 번째 페이지 시작 -->
+    <div class="page" id="first_page">
+
+        <!-- house 시작 -->
+        <div id="house">
+            <!-- 타이포 시작 -->
+            <img src="images/typo1.svg" alt="typo_minju" id="typo1">
+            <img src="images/typo2.svg" alt="typo_house" id="typo2">
+            <!-- 타이포 끝 -->
+            <img src="images/house.svg" alt="house_shape" id="house_shape">
+            <span>▲ CLICK!</span>
+        </div>
+        <!-- house 끝 -->
+
+        <!-- light 시작 -->
+        <div id="light">
+            <img src="images/light.svg" alt="light_shape" id="light_shape">
+            <span>▲ CLICK!</span>
+        </div>
+        <!-- light 끝 -->
+
+    </div>
+    <!-- 첫 번째 페이지 끝 -->
+
+    <!-- 두 번째 페이지 시작 -->
+    <div class="page" id="second_page">
+
+        <!-- overlay 시작 -->
+        <div id="overlay">
+            <div id="box">
+                <button id="close"></button>
+                <aside>
+                    <div class="category about">
+                        <h2>ABOUT</h2>
+                        <ul>
+                            <li class="profile">PROFILE</li>
+                            <li class="skills">SKILLS</li>
+                            <li class="certificate">CERTIFICATE</li>
+                        </ul>
+                    </div>
+                    <div class="category web">
+                        <h2>WEB</h2>
+                        <ul>
+                            <li class="site">SITE</li>
+                            <li class="banner">BANNER</li>
+                            <li class="detail">DETAIL</li>
+                        </ul>
+                    </div>
+                    <div class="category graphic">
+                        <h2>GRAPHIC</h2>
+                    </div>
+                    <div id="tag">
+                        <div id="tag_info">
+                            <ul>
+                                <li>MINJU HOUSE</li>
+                                <li>WEB DESIGN PORTFOLIO</li>
+                                <li class="icons">
+                                    <img src="images/facebook.svg" alt="facebook">
+                                    <img src="images/instagram.svg" alt="instagram">
+                                    <img src="images/twitter.svg" alt="twitter">
+                                    <img src="images/youtube.svg" alt="youtube">
+                                </li>
+                                <li class="lighter">
+                                    포트폴리오가<br>
+                                    마음에 드셨다면<br>
+                                    CONTACT로 연락주세요
+                                </li>
+                                <li class="lighter copy">
+                                    GWANGJU IN SOUTH KOREA<br>
+                                    COPY RIGHT. JEONG MINJU
+                                </li>
+                                <li>
+                                    <img src="images/korea.png" alt="korea">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <div id="wrap">
+                    <div id="ctn_bx">
+                        <div class="profile">
+                            <div id="introduce">
+                                <img src="images/profile-original.JPG" alt="photo">
+                                <div id="typing">
+                                    <p class="designer">HELLO, I'M WEB DESIGNER</p>
+                                    <p id="type"></p>
+                                </div>
+                            </div>
+                            <div id="information">
+                                <div class="info1">
+                                    <ul>
+                                        <li>
+                                            <h2>NAME</h2>
+                                            <p>정민주</p>
+                                        </li>
+                                        <li>
+                                            <h2>BIRTH</h2>
+                                            <p>1997.07.10</p>
+                                        </li>
+                                        <li>
+                                            <h2>PHONE</h2>
+                                            <p>010.2213.3938</p>
+                                        </li>
+                                        <li>
+                                            <h2>E-MAIL</h2>
+                                            <p>cdalswn@naver.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info2">
+                                    <ul>
+                                        <li>
+                                            <h2>EDUCATION</h2>
+                                            <p>금호중앙여자고등학교 졸업 <span>(2016)</span></p>
+                                            <p>전남대학교 음악대학 피아노전공 졸업 <span>(2020)</span></p>
+                                        </li>
+                                        <li>
+                                            <h2 class="experience">EXPERIENCE</h2>
+                                            <p>뮤직아트음악학원 강사 <span>(2019 ~ 2022)</span></p>
+                                            <p>카페서플라이 파트타이머 <span>(2021 ~ 2022)</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="programs">
+                                <h2>PROGRAMS</h2>
+                                <ul>
+                                    <li>
+                                        <img src="images/adobe-ps.svg" alt="ps">
+                                        <div><span class="per80">80%</span></div>
+                                    </li>
+                                    <li>
+                                        <img src="images/adobe-id.svg" alt="id">
+                                        <div><span class="per50">50%</span></div>
+                                    </li>
+                                    <li>
+                                        <img src="images/adobe-pr.svg" alt="pr">
+                                        <div><span class="per50">50%</span></div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <img src="images/adobe-ai.svg" alt="ai">
+                                        <div><span class="per80">80%</span></div>
+                                    </li>
+                                    <li>
+                                        <img src="images/adobe-xd.svg" alt="xd">
+                                        <div><span class="per70">70%</span></div>
+                                    </li>
+                                    <li>
+                                        <img src="images/adobe-ae.svg" alt="ae">
+                                        <div><span class="per50">50%</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="languages">
+                                <h2>LANGUAGES</h2>
+                                <ul>
+                                    <li>
+                                        <p>HTML</p>
+                                        <div><span class="per80">80%</span></div>
+                                    </li>
+                                    <li>
+                                        <p>CSS</p>
+                                        <div><span class="per80">80%</span></div>
+                                    </li>
+                                    <li>
+                                        <p>JAVASCRIPT</p>
+                                        <div><span class="per50">50%</span></div>
+                                    </li>
+                                    <li>
+                                        <p>JQUERY</p>
+                                        <div><span class="per50">50%</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="certificate">
+                            <div class="license">
+                                <img src="images/certificate1.png" alt="gtq">
+                                <img src="images/certificate2.png" alt="national">
+                            </div>
+                            <div class="date">
+                                <ul>
+                                    <li>
+                                        <h2>2021.12</h2>
+                                        <p>GTQ 포토샵 1급</p>
+                                    </li>
+                                    <li>
+                                        <h2>2022.04</h2>
+                                        <p>컴퓨터그래픽스운용기능사</p>
+                                    </li>
+                                    <li>
+                                        <h2>2022.09</h2>
+                                        <p>웹디자인기능사</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="site">
+                            <div class="site_top">
+                                <div class="site_name">
+                                    <div class="goodplant">
+                                        <h2>RENEWAL</h2>
+                                        <p>굿플란트치과의원</p>
+                                    </div>
+                                    <div class="tamburins">
+                                        <h2>RENEWAL</h2>
+                                        <p>탬버린즈</p>
+                                    </div>
+                                    <div class="milkyshop">
+                                        <h2>CREATE</h2>
+                                        <p>밀키샵</p>
+                                    </div>
+                                </div>
+                                <div class="site_btn">
+                                    <div class="goodplant">
+                                        <a href="#">PROCESS</a>
+                                        <a href="goodplant/index.html">WEBSITE</a>
+                                    </div>
+                                    <div class="tamburins">
+                                        <a href="#">PROCESS</a>
+                                        <a href="#">WEBSITE</a>
+                                    </div>
+                                    <div class="milkyshop">
+                                        <a href="#">PROCESS</a>
+                                        <a href="milkyshop/index.html">WEBSITE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_center">
+                                <img src="images/monitor.svg" alt="monitor">
+                                <div class="site_box">
+                                    <div class="site_img">
+                                        <img src="images/goodplant.jpg" alt="goodplant" class="goodplant">
+                                        <img src="images/tamburins.jpg" alt="tamburins" class="tamburins">
+                                        <img src="images/milkyshop.jpg" alt="milkyshop" class="milkyshop">
+                                    </div>
+                                    <button id="prev">&lt;</button>
+                                    <button id="next">&gt;</button>
+                                </div>
+                            </div>
+                            <div class="site_bottom">
+                                <div class="site_info">
+                                    <div class="goodplant">
+                                        <p>
+                                            MAINPAGE 1 / SUB PAGE 2
+                                        </p>
+                                        <p>
+                                            14DAYS
+                                        </p>
+                                    </div>
+                                    <div class="tamburins">
+                                        <p>
+                                            MAINPAGE 1 / SUB PAGE 2
+                                        </p>
+                                        <p>
+                                            11DAYS
+                                        </p>
+                                    </div>
+                                    <div class="milkyshop">
+                                        <p>
+                                            MAINPAGE 1 / SUB PAGE 2
+                                        </p>
+                                        <p>
+                                            7DAYS
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner">
+                            <ul class="banners">
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/banner1.jpg" alt="banner1">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/banner2.jpg" alt="banner2">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/banner3.jpg" alt="banner3">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/banner4.png" alt="banner4">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/banner5.jpg" alt="banner5" class="shortH">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/banner6.jpg" alt="banner6" class="shortH">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <ul class="details">
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="" alt="detail1">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="" alt="detail2">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="" alt="detail3">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="graphic">
+                            <ul class="graphics">
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/graphic1.jpg" alt="graphic1">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/graphic2.png" alt="graphic2">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/graphic3.jpg" alt="graphic3">
+                                </li>
+                                <li>
+                                    <span></span><span></span><span></span><span></span>
+                                    <img src="images/graphic4.jpg" alt="graphic4">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- overlay 끝 -->
+
+        <!-- fade 시작 -->
+        <div id="fade">
+            <img src="images/graphic1.jpg" id="photo">
+            <button id="close_btn"><span>CLOSE BUTTON</span></button>
+        </div>
+
+
+        <!-- 전체 일러스트 아이콘들 시작 -->
+        <div id="contents">
+
+            <!-- 오디오 일러스트 메뉴바 시작 -->
+            <div id="menu">
+                <img src="images/audio.svg" alt="audio" id="audio">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>WEB</li>
+                    <li>GRAPHIC</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <!-- 오디오 일러스트 메뉴바 끝 -->
+
+            <div id="mirror">
+                <img src="images/mirror.svg" alt="mirror">
+            </div>
+
+            <!-- 액자들 시작 -->
+            <div id="gallery">
+                <img src="images/gallery1.svg" alt="gallery1">
+                <img src="images/gallery2.svg" alt="gallery2" id="gallery2_ai">
+                <span>▲ GRAPHIC</span>
+                <img src="images/gallery3.svg" alt="gallery3">
+            </div>
+            <!-- 액자들 끝 -->
+
+            <!-- 스탠드조명 home 메뉴 시작 -->
+            <div id="stand">
+                <span>HOME ▶</span>
+                <img src="images/stand.svg" alt="stand" id="stand_ai">
+            </div>
+            <!-- 스탠드조명 home 메뉴 끝 -->
+
+            <div id="sofa">
+                <img src="images/sofa.svg" alt="sofa">
+            </div>
+
+            <!-- 피아노 about 메뉴 시작 -->
+            <div id="piano">
+                <img src="images/piano.svg" alt="piano" id="piano_ai">
+                <span>▼ ABOUT</span>
+            </div>
+            <!-- 피아노 about 메뉴 끝 -->
+
+
+            <div id="rabbit">
+                <img src="images/rabbit.svg" alt="rabbit">
+            </div>
+            <div id="table">
+                <img src="images/table.svg" alt="table">
+            </div>
+
+            <!-- 턴테이블 contact 메뉴 시작 -->
+            <div id="player">
+                <img src="images/player.svg" alt="player" id="player_ai">
+                <span>▼ CONTACT</span>
+            </div>
+            <!-- 턴테이블 contact 메뉴 끝 -->
+
+            <!-- 컴퓨터 web 메뉴 시작 -->
+            <div id="computer">
+                <img src="images/computer.svg" alt="computer" id="computer_ai">
+                <span>WEB ▶</span>
+            </div>
+            <!-- 컴퓨터 web 메뉴 끝 -->
+        </div>
+        <!-- 전체 일러스트 아이콘들 끝 -->
+
+    </div>
+    <!-- 두 번째 페이지 끝 -->
+
+    <!-- 세 번째 페이지 시작 -->
+    <div class="page" id="last_page">
+        <!-- contact 시작 -->
+        <div id="contact">
+            <h1>CONTACT</h1>
+            <div id="lp_player">
+                <div id="div_lp" class="rotate linear infinite">
+                    <img src="images/lp.svg" alt="lp" id="lp">
+                </div>
+                <div id="div_stick">
+                    <img src="images/stick.svg" alt="stick" id="stick">
+                </div>
+            </div>
+            <!-- 연락처 시작 -->
+            <div id="call">
+                <p class="phone">010.2213.3938</p>
+                <p class="email">cdalswn@naver.com</p>
+            </div>
+            <!-- 연락처 끝 -->
+        </div>
+        <!-- contact 끝 -->
+    </div>
+    <!-- 세 번째 페이지 끝 -->
+</body>
+
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub-style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/sub-script.js"></script>
+    <title>Goodplant</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="header1200">
+            <h1 id="logo">
+                <a href="index.html">
+                    <img src="images/header-logo.png" alt="main-logo">
+                </a>
+            </h1>
+            <ul id="gnb">
+                <li>
+                    <a href="sub.html">병원소개</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">굿플란트</a></li>
+                        <li><a href="sub.html">협진진료</a></li>
+                        <li><a href="sub.html">의료진소개</a></li>
+                        <li><a href="sub.html">진료안내</a></li>
+                        <li><a href="sub.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">치아교정</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">청소년교정</a></li>
+                        <li><a href="sub.html">비발치돌출입</a></li>
+                        <li><a href="sub.html">설측교정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">임플란트</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">뼈이식</a></li>
+                        <li><a href="sub.html">전체</a></li>
+                        <li><a href="sub.html">앞니, 어금니</a></li>
+                        <li><a href="sub.html">틀니</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">심미보철</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">심미보철</a></li>
+                        <li><a href="sub.html">울세라믹</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">일반진료</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">치주관리</a></li>
+                        <li><a href="sub.html">잇몸치료</a></li>
+                        <li><a href="sub.html">스케일링</a></li>
+                        <li><a href="sub.html">치아외상</a></li>
+                        <li><a href="sub.html">신경치료</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub.html">진료예약</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub.html">간편예약</a></li>
+                        <li><a href="sub.html">전화예약</a></li>
+                        <li><a href="sub.html">네이버예약</a></li>
+                        <li><a href="sub.html">카톡예약</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub2.html">커뮤니티</a>
+                    <ul class="sub-menu">
+                        <li><a href="sub2.html">공지사항</a></li>
+                        <li><a href="sub2.html">상담문의</a></li>
+                        <li><a href="sub2.html">진료후기</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="gnb-right">
+                <li>
+                    <button class="search-icon">
+                        <span>검색하기</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="login-icon">
+                        <span>로그인하기</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="location-icon">
+                        <span>위치찾기</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div id="sub-bg"><span>서브메뉴배경</span></div>
+    </header>
+    <div class="modal" id="modalSearch">
+        <div class="modal-wrap">
+            <div class="modal-box">
+                <div class="modal-logo">
+                    <img alt="logo" src="images/header-logo-dark.png">
+                </div>
+                <button type="button" class="modal-close">
+                    <span>close</span>
+                </button>
+                <form name="searchForm" method="post" id="searchForm" autocomplete="off">
+                    <input type="text" name="search" id="search-input" placeholder="검색어를 입력하세요">
+                    <a href="#"><span>검색하기</span></a>
+                </form>
+                <ul class="tag-list">
+                    <li><a href="index.html" class="tag-btn">#사랑니발치</a></li>
+                    <li><a href="index.html" class="tag-btn">#청소년교정</a></li>
+                    <li><a href="index.html" class="tag-btn">#스케일링</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalLogin">
+        <div class="modal-wrap">
+            <div class="modal-box">
+                <div class="modal-logo">
+                    <img alt="logo" src="images/header-logo-dark.png">
+                </div>
+                <button type="button" class="modal-close">
+                    <span>close</span>
+                </button>
+                <form name="loginForm" id="loginForm" autocomplete="off">
+                    <div class="login-input-box">
+                        <input placeholder="아이디를 입력해주세요." name="userid" id="login-userid" type="text">
+                        <input placeholder="영, 숫자 포함 8자리 이상 입력해주세요." name="passwd" id="login-passwd" type="password">
+                        <button type="button" class="login-btn" id="loginBtn">로그인</button>
+                        <ul class="login-member">
+                            <li><a href="index.html" class="join-btn">회원가입</a></li>
+                            <li><a href="index.html" class="id-search-btn">아이디, 비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalLocation">
+        <div class="modal-wrap">
+            <div class="modal-box">
+                <div class="modal-logo">
+                    <img alt="logo" src="images/header-logo-dark.png">
+                </div>
+                <button type="button" class="modal-close">
+                    <span>close</span>
+                </button>
+                <ul class="location-list">
+                    <li>
+                        <strong>주소</strong>
+                        <p>서울 송파구 거마로 4 (거여동 37-6 B1층, 4층, 5층, 6층)</p>
+                    </li>
+                    <li>
+                        <strong>주차 안내</strong>
+                        <p>지하주차장 1층에 주차 가능합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="m-banner">
+        <img src="images/sub1/sub1-banner.png" alt="sub1-banner">
+        <div id="m-banner-txt">
+            <p>원래 내 치아처럼 자연스러운</p>
+            <h2>임플란트센터</h2>
+        </div>
+    </div>
+    <div class="section" id="section01">
+        <ul id="icon-menu">
+            <li>
+                <a href="#">
+                    <img src="images/sub1/menu-implant.png" alt="menu-implant">
+                    <span>수면임플란트</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/sub1/menu-implant.png" alt="menu-implant">
+                    <span>뼈이식임플란트</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/sub1/menu-implant.png" alt="menu-implant">
+                    <span>전체임플란트</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/sub1/menu-implant.png" alt="menu-implant">
+                    <span>앞니, 어금니 임플란트</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/sub1/menu-implant.png" alt="menu-implant">
+                    <span>틀니 임플란트</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="section02">
+        <p>상실된 모든 치아를 예전처럼!</p>
+        <h3>전체 임플란트</h3>
+        <p>
+            "전체 임플란트는 16~20개의 임플란트를 식립하는 큰 범위의 수술입니다.<br>
+            고난이도의 수술인 만큼 환자의 구강상태를 면밀히 분석합니다<br>
+            과거 틀니를 사용했지만 전체 임플란트로 저작기능과 심미적인 효과까지 기대할 수 있습니다."
+        </p>
+    </div>
+    </div>
+    </div>
+    <div class="section" id="section03">
+        <h3>전체 임플란트 장점</h3>
+        <div class="contents">
+            <ul>
+                <li>
+                    <div class="goodpoint">
+                        <p>
+                            틀니에 비해<br>
+                            적은 이물감
+                        </p>
+                    </div>
+                    <div class="excellent">
+                        <img src="images/sub1/excellent.png" alt="excellent">
+                    </div>
+                </li>
+                <li>
+                    <div class="goodpoint">
+                        <p>
+                            자연치아와<br>
+                            비슷한 저작력
+                        </p>
+                    </div>
+                    <div class="excellent">
+                        <img src="images/sub1/excellent.png" alt="excellent">
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="goodpoint">
+                        <p>
+                            원래 내 치아와 같은<br>
+                            자연스러움
+                        </p>
+                    </div>
+                    <div class="excellent">
+                        <img src="images/sub1/excellent.png" alt="excellent">
+                    </div>
+                </li>
+                <li>
+                    <div class="goodpoint">
+                        <p>
+                            치아 탈착이<br>
+                            불필요
+                        </p>
+                    </div>
+                    <div class="excellent">
+                        <img src="images/sub1/excellent.png" alt="excellent">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section04">
+        <h3>전체 임플란트 적용 대상</h3>
+        <ul>
+            <li>틀니로 인해 잇몸 상태가 좋지 않은 경우</li>
+            <li>고연령으로 치아가 모두 상실된 경우</li>
+            <li>사고 등으로 대부분의 치아를 상실한 경우</li>
+            <li>선천적으로 치아가 약한 경우</li>
+        </ul>
+    </div>
+    <div class="section" id="section05">
+        <h3>전체 임플란트 치료 과정</h3>
+        <ul id="process-list">
+            <li class="on">
+                <img src="images/sub1/process1.png" alt="process1">
+                <div class="process-txt">
+                    <span>01</span>
+                    <p>
+                        파노라마 촬영<br>
+                        구강 내 인상채득
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/sub1/process2.png" alt="process2">
+                <div class="process-txt">
+                    <span>02</span>
+                    <p>
+                        촬영 데이터 계측 및<br>
+                        구강 모델 분석
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/sub1/process3.png" alt="process3">
+                <div class="process-txt">
+                    <span>03</span>
+                    <p>
+                        첨단 3D CT 스캐너로<br>
+                        촬영보철 디자인
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/sub1/process4.png" alt="process4">
+                <div class="process-txt">
+                    <span>04</span>
+                    <p>
+                        가상 수술 시뮬레이션
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/sub1/process5.png" alt="process5">
+                <div class="process-txt">
+                    <span>05</span>
+                    <p>
+                        네비게이션 임플란트 장치<br>
+                        제작 및 수술
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="section06">
+        <h3>굿플란트의 특별함</h3>
+        <div class="contents">
+            <div class="value">
+                <p>Implant<span>01</span></p>
+                <h2>
+                    디지털 임플란트
+                </h2>
+                <p>
+                    "컴퓨터 모의시술을 통해 치아의 위치와 각도,<br>
+                    기존 치아와의 밸런스, 수술 후 임플란트의 사용 범위 등<br>
+                    다양한 정보를 미리 계산하여 최적의 임플란트 식립 위치를 결정하여<br>
+                    보다 정확하고 빠른 시술의 최첨단 임플란트입니다"
+                </p>
+                <img src="images/sub1/special1.png" alt="value1">
+            </div>
+            <div class="value">
+                <p>Implant<span>02</span></p>
+                <h2>
+                    원내 기공실
+                </h2>
+                <p>
+                    "신속하고 정밀한 기공물 제작으로 환자분의 치료시간과 기간을 단축합니다.<br>
+                    원내 자체 기공소를 보유함으로써, 외부 기공소로 작업물을 주고 받는<br>
+                    시간을 단축하여 가장 최적화되고 자연스러운 기공물 제작이 가능합니다"
+                </p>
+                <img src="images/sub1/special2.png" alt="value2">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section07">
+        <div class="title">
+            <h3 class="title-en">Medical Appliance</h3>
+            <h3 class="title-kr">장비소개</h3>
+        </div>
+        <div id="appliance-wrap">
+            <div class="animation-appliance animation">
+                <ul class="appliance-list">
+                        <li>
+                            <div class="app app-w">
+                                <img src="images/sub1/appliance1.png" alt="appliance1">
+                                <div class="app-hover">
+                                    <div class="app-name">
+                                        <p id="name-en">Actto-50</p>
+                                        <p id="name-kr">고주파 전기메스</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="app-s"> 
+                                <li class="app app-short">
+                                    <img src="images/sub1/appliance2.png" alt="appliance2">
+                                    <div class="app-hover">
+                                        <div class="app-name">
+                                            <p id="name-en">auto clave</p>
+                                            <p id="name-kr">고압증기 멸균기</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="app app-short">
+                                    <img src="images/sub1/apppliance3.png" alt="appliance3">
+                                    <div class="app-hover">
+                                        <div class="app-name">
+                                            <p id="name-en">clenser</p>
+                                            <p id="name-kr">초음파 세척기</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="app app-h">
+                                <img src="images/sub1/appliance4.png" alt="appliance4">
+                                <div class="app-hover">
+                                    <div class="app-name">
+                                        <p id="name-en">KOMAX</p>
+                                        <p id="name-kr">치과집진기</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="app-s">
+                                <li class="app app-short">
+                                    <img src="images/sub1/appliance5.png" alt="appliance5">
+                                    <div class="app-hover">
+                                        <div class="app-name">
+                                            <p id="name-en">tonometer</p>
+                                            <p id="name-kr">혈압측정기</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="app app-short">
+                                    <img src="images/sub1/appliance6.png" alt="appliance6">
+                                    <div class="app-hover">
+                                        <div class="app-name">
+                                            <p id="name-en">QUATTRO care</p>
+                                            <p id="name-kr">핸드피스 관리기기</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="app app-w">
+                                <img src="images/sub1/appliance7.png" alt="appliance7">
+                                <div class="app-hover">
+                                    <div class="app-name">
+                                        <p id="name-en">DIO implant</p>
+                                        <p id="name-kr">초고성능 모터</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="app app-h">
+                                <img src="images/sub1/appliance8.png" alt="appliance8">
+                                <div class="app-hover">
+                                    <div class="app-name">
+                                        <p id="name-en">KAVO i-CAT</p>
+                                        <p id="name-kr">치과전용 CT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section08">
+        <h3>Before & After</h3>
+            <ul class="review-list">
+                <li>
+                    <img src="images/sub1/before1.png" alt="before1" class="before-img">
+                    <img src="images/sub1/after1.png" alt="after1" class="after-img">
+                </li>
+                <li>
+                    <img src="images/sub1/before2.png" alt="before2" class="before-img">
+                    <img src="images/sub1/after2.png" alt="after2" class="after-img">
+                </li>
+            </ul>
+    </div>
+    <div class="section" id="section09">
+        <div class="title">
+            <h3 class="title-en">Medical FAQ</h3>
+            <h3 class="title-kr">많이 물어보는 궁금증</h3>
+        </div>
+        <ul class="qna-list">
+            <li>
+                <div class="q-txt">
+                    나이가 들어 잇몸이 약해도 임플란트를 할 수 있나요?
+                </div>
+                <div class="a-txt">
+                    A. 네, 가능합니다. 굿플란트의 10년 이상의 노하우로<br>
+                    성공률은 99%에 가깝습니다.<br>
+                    잇몸이 약하고 고령인 분들을 위해 절제되고 깔끔한 수술법으로<br>
+                    치료에 최선의 안전을 보장합니다.
+                </div>
+            </li>
+            <li>
+                <div class="q-txt">
+                    당뇨나 고혈압이 있어도 임플란트 수술을 받을 수 있나요?
+                </div>
+                <div class="a-txt">
+                    A. 굿플란트는 철저한 전신 건강 체크와 약물 체크,<br>
+                    세심하고 절제된 수술과 수술 후 꼼꼼한 체크를 통해 임플란트를 진행합니다.<br>
+                    출혈에 민감한 당뇨 및 고혈압 환자분들의 임플란트, 뼈이식 및 잇몸 수술을<br>
+                    안전하게 받으실 수 있습니다.
+                </div>
+            </li>
+            <li>
+                <div class="q-txt">
+                    임플란트의 수명은 얼마나 되나요?
+                </div>
+                <div class="a-txt">
+                    A. 임플란트는 환자분꼐서 정기적으로 검진을 받고 시술 후에도<br>
+                    관리가 잘 이루어져야 오랜 기간 동안 수명을 유지할 수 있고,<br>
+                    반영구적으로 사용할 수 있습니다. 사후 관리만 된다면<br>
+                    최소 10년 ~ 30년 정도 수명을 연장하는 것이 가능합니다.
+                </div>
+            </li>
+            <li>
+                <div class="q-txt">
+                    임플란트 수술 후 부작용이나 후유증은 없나요?
+                </div>
+                <div class="a-txt">
+                    A. 모든 외과적 수술들이 약간의 위험성과 부작용을 동반할 가능성은 있습니다.<br>
+                    임플란트 시술 시 아주 드물게 합병증을 유발 할 수 있는데 간혹 수술 시 신경에<br>
+                    손상을 주어 입술이나 턱부위 또는 코끝이나 혀의 감각이 상실되거나 변화될 수 있는데<br>
+                    이런 감각 이상은 극소수를 제외하고 대부분 수주 또는 수개월 내에 다시 정상으로 돌아옵니다.<br>
+                    가끔 세균감염으로 염증이 생길 수 있으나 수술 전 후 항생제 투여로 방지할 수 있습니다.
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="section10">
+        <h3>Info</h3>
+        <p>굿플란트치과의원의 진료시간과 전화번호, 오시는 길 안내</p>
+        <div class="contents">
+            <div class="left-box">
+                <div class="information info1">
+                    <h4>오시는 길</h4>
+                    <p>서울 송파구 거마로 4 (거여동 37-6 B1층, 4층, 5층, 6층)</p>
+                    <ul>
+                        <li>
+                            <p>일반과</p>
+                            <p>02.430.9998</p>
+                        </li>
+                        <li>
+                            <p>교정과</p>
+                            <p>02.430.9942</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information info2">
+                    <h4>진료시간</h4>
+                    <ul>
+                        <li>
+                            <p>일반과</p>
+                            <p>(일요일, 공휴일 휴진)</p>
+                            <ul class="medical-time">
+                                <li>월, 수 : 오전 10:00 ~ 오후 9:00</li>
+                                <li>화, 목, 금 : 오전 10:00 ~ 오후 7:00</li>
+                                <li>토요일 : 오전 10:00 ~ 오후 2:00</li>
+                                <li>점심시간 : 오후 1:00 ~ 오후 2:00</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>교정과</p>
+                            <p>(목요일, 일요일, 공휴일 휴진)</p>
+                            <ul class="medical-time">
+                                <li>월, 수 : 오후 2:00 ~ 오후 9:00</li>
+                                <li>화, 금 : 오전 10:00 ~ 오후 7:00</li>
+                                <li>토요일 : 오전 09:00 ~ 오후 2:00</li>
+                                <li>점심시간 : 오후 1:00 ~ 오후 2:00</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-box"></div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer1200">
+            <div class="ft-left">
+                <div id="ft-logo">
+                    <a href="index.html">
+                        <img src="images/footer-logo.png" alt="ft-logo">
+                    </a>
+                </div>
+                <p>
+                    서울 송파구 거마로 4 (거여동 37-6 B1층, 4층, 5층, 6층)<br>
+                    사업자등록번호 : 623.30.00585<br>
+                    대표자 : 장영은<br>
+                    &copy;굿플란트치과의원
+                </p>
+            </div>
+            <div class="ft-right">
+                <ul>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일무단수집거부</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/kakao.svg" alt="kakao">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/blog.svg" alt="blog">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/youtube.svg" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="go-top">
+        <span>
+            ^<br>
+            TOP
+        </span>
+    </a>
+</body>
+
+</html>

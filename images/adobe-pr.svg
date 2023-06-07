@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 78 76" style="enable-background:new 0 0 78 76;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'AdobeClean-Bold';}
+	.st1{font-size:47.4083px;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<font horiz-adv-x="1000">
+<!-- This font is intended for limited use by Adobe software, technology and authorized users. Any unauthorized installation, transfer and/or use of this font is strictly prohibited. Adobe Clean is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="AdobeClean-Bold" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M80,50l170,255l170,-255M279,350l171,255l0,-510M50,605l170,-255l-170,-255M80,650l340,0l-170,-255z"/>
+<glyph unicode="P" horiz-adv-x="567" d="M74,7C74,2 77,0 82,0l105,0C193,0 195,3 195,8l0,205C218,213 226,213 258,213C409,213 532,282 532,441C532,551 460,659 266,659C193,659 119,657 81,656C76,656 74,653 74,648M195,552C206,553 234,554 269,554C361,554 413,511 413,438C413,347 342,319 258,319C225,319 212,319 195,320z"/>
+<glyph unicode="r" horiz-adv-x="348" d="M64,493C59,493 58,492 58,487C62,454 63,396 63,353l0,-345C63,3 65,0 72,0l104,0C182,0 185,2 185,8l0,322C208,360 267,385 338,383C345,383 347,385 347,390l0,106C347,502 345,503 339,503C270,503 213,467 179,425C178,447 174,472 169,485C167,491 164,493 158,493z"/>
+</font>
+
+	<text transform="matrix(1 0 0 1 17.5716 52.033)" class="st0 st1">Pr</text>
+<path class="st2" d="M64.79,73.17H13.21c-5.45,0-9.88-4.42-9.88-9.88V12.7c0-5.45,4.42-9.88,9.88-9.88h51.57
+	c5.45,0,9.88,4.42,9.88,9.88V63.3C74.66,68.75,70.24,73.17,64.79,73.17z"/>
+</svg>

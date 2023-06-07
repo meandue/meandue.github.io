@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/sub-style.css">
+        <script src="script/jquery-3.6.0.min.js"></script>
+        <script src="script/sub-script.js"></script>
+        <title>Tamburins</title>
+    </head>
+<body>
+    <div id="background">
+        <img src="images/sub1/main-banner.jpg" alt="main-banner">
+        <h2 id="page-title">Hand</h2>
+    </div>
+    <!-- header -->
+    <div id="header-bg"></div>
+    <a href="#" id="menu">
+        <span></span>
+    </a>
+    <h1 id="head-logo">
+        <a href="index.html">
+            <img src="images/header-logo.svg" alt="head-logo">
+        </a>
+    </h1>
+    <div id="gnb-right">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/login-icon.svg" alt="login" id="login-icon">
+                    <span>LOGIN</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/cart-icon.svg" alt="cart" id="cart-icon">
+                    <span>CART</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/wish-icon.svg" alt="wishlist" id="wish-icon">
+                    <span>WISHLIST</span>
+                </a>
+            </li>
+            <li>
+                <img src="images/lang-icon.svg" alt="language" id="lang-icon">
+                <!-- <select name="language" id="language">
+                    <option value="selected">KR</option>
+                    <option value="EN">EN</option>
+                    <option value="CN">CN</option>
+                </select> -->
+                <div id="lang-select" tabindex="0"><span class="current">KR</span>
+                    <div id="lang-select-icon"></div>
+                    <ul class="lang-list">
+                        <li data-value="lang_01" class="option focus"><span class="selected">KR</span></li>
+                        <li data-value="lang_02" class="option"><span>EN</span></li>
+                        <li data-value="lang_03" class="option"><span>CN</span></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <nav>
+        <ul id="main-menu">
+            <li>
+                <div class="category">
+                    <h2><a href="sub.html">SHOP</a></h2>
+                    <button class="cate-view"><span>button</span></button>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="sub.html">New</a></li>
+                    <li><a href="sub.html">Best</a></li>
+                    <li><a href="sub.html">Hand</a></li>
+                    <li><a href="sub.html">Body</a></li>
+                    <li><a href="sub.html">Perfume</a></li>
+                    <li><a href="sub.html">Gift & Kit</a></li>
+                    <li><a href="sub.html">Object</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="category">
+                    <h2><a href="sub.html">ABOUT</a></h2>
+                    <button class="cate-view"><span>button</span></button>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="sub.html">Our Story</a></li>
+                    <li><a href="sub.html">Our Campaign</a></li>
+                    <li><a href="sub.html">Notice</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="category">
+                    <h2><a href="sub.html">STORES</a></h2>
+                    <button class="cate-view"><span>button</span></button>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="sub.html">Korea</a></li>
+                    <li><a href="sub.html">China</a></li>
+                    <li><a href="sub.html">Exhibition</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="category">
+                    <h2><a href="sub.html">CONTACT</a></h2>
+                    <button class="cate-view"><span>button</span></button>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="sub.html">Instagram</a></li>
+                    <li><a href="sub.html">Kakaotalk</a></li>
+                    <li><a href="sub.html">Weibo</a></li>
+                    <li><a href="sub.html">Facebook</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- header End -->
+    <div id="section01" class="width1200">
+        <ul id="quick-menu">
+            <li><a href="sub.html">New</a></li>
+            <li><a href="sub.html">Best</a></li>
+            <li><a href="sub.html">Hand</a></li>
+            <li><a href="sub.html">Body</a></li>
+            <li><a href="sub.html">Perfume</a></li>
+            <li><a href="sub.html">Gift & Kit</a></li>
+            <li><a href="sub.html">Object</a></li>
+        </ul>
+    </div>
+    <div id="section02">
+        <img src="images/logo.svg" alt="logo">
+        <h3>HAND CARE</h3>
+        <P>
+            향수처럼 사용할 수 있는 핸드케어 제품군으로 건조하고 손상되기 쉬운 손과 피부에 바르는 순간 빠르게 흡수합니다.<br>
+            끈적이지 않는 산뜻한 감촉과 함께 풍부한 영양을 공급하는 동시에 매력적인 향기를 전해줍니다.<br>
+            일상의 자극으로 지친 피부를 편안한 수분감으로 진정시켜주어 촉촉하게 빛나는 피부를 완성해줍니다.
+        </P>
+    </div>
+    <div id="section03">
+        <div class="product-box width1200" id="perfume-shell">
+            <div class="product-banner">
+                <div class="banner">
+                    <div class="side">
+                        <img src="images/sub1/banner1.jpg" alt="banner1">
+                        <div class="side-text">
+                            <h3>Perfume Shell X</h3>
+                            <p>
+                                퍼퓸 쉘 엑스
+                            </p>
+                            <span>+ VIEW MORE</span>
+                        </div>
+                    </div>
+                    <div class="side back">
+                        <div class="back-text">
+                            <h3>Perfume Shell X</h3>
+                            <p>
+                                모래에서 건져 낸 듯한 퍼퓸 쉘엑스의 디자인은 각각의 제품이<br>
+                                고유한 무늬를 띕니다. 향의 다채로운 느낌을 상상할 수 있도록<br>
+                                여러가지 컬러로 구성되어 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list" id="shell-sliding">
+                <div class="slide-btn" id="shellButton">
+                    <button class="prev-btn"><span>prev</span></button>
+                    <button class="next-btn"><span>next</span></button>
+                </div>
+                <div class="product-slide" id="shellSlide">
+                    <div class="container">
+                       <ul>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell1.png" alt="product1">
+                                    <h4>Chamo</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        진득한 카모마일<br>
+                                        부드러운 나무결<br>
+                                        머스크
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell2.png" alt="product2">
+                                    <h4>LALE</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        이슬을 머금은 풋사과<br>
+                                        화이트 튤립<br>
+                                        샌달우드
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell3.png" alt="product3">
+                                    <h4>BERGA SANDAL</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        지중해의 베르가못<br>
+                                        쌉싸레한 청귤<br>
+                                        샌달우드
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell4.png" alt="product4">
+                                    <h4>FEE9</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        무화과 나무<br>
+                                        엠브레트 씨앗<br>
+                                        달콤 씁쓸한
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                        </ul> 
+                       <ul>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell5.png" alt="product5">
+                                    <h4>VEIN</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        월계수 잎<br>
+                                        은방울 꽃<br>
+                                        정돈된 가죽
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell6.png" alt="product6">
+                                    <h4>HER</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        삼나무<br>
+                                        바이올렛 잎<br>
+                                        시트러스
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell7.png" alt="product7">
+                                    <h4>POSY</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        장미 덤불<br>
+                                        패츌리<br>
+                                        젖은 땅
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell8.png" alt="product8">
+                                    <h4>BLESSED</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        블랙베리<br>
+                                        시트러스<br>
+                                        프루티향
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                        </ul> 
+                       <ul>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell9.png" alt="product9">
+                                    <h4>000</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        샌달우드<br>
+                                        패츌리<br>
+                                        흙 내음
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell10.png" alt="product10">
+                                    <h4>FLOW</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        샌달우드<br>
+                                        은은한 가죽 향<br>
+                                        스파이시
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell11.png" alt="product11">
+                                    <h4>DUO SET1</h4>
+                                    <p>47,500 KRW</p>
+                                    <span>55ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        FEE9 + 000
+                                    </p>
+                                    <p class="size">15ML + 40ML</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/shell12.png" alt="product12">
+                                    <h4>DUO SET2</h4>
+                                    <p>47,500 KRW</p>
+                                    <span>55ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        VEIN + 000
+                                    </p>
+                                    <p class="size">15ML + 40ML</p>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box width1200" id="perfume-balm">
+            <div class="product-banner">
+                <div class="banner">
+                    <div class="side">
+                        <img src="images/sub1/banner2.jpg" alt="banner2">
+                        <div class="side-text">
+                            <h3>Perfume Balm</h3>
+                            <p>
+                                퍼퓸 밤
+                            </p>
+                            <span>+ VIEW MORE</span>
+                        </div>
+                    </div>
+                    <div class="side back">
+                        <div class="back-text">
+                            <h3>Perfume Balm</h3>
+                            <p>
+                                핸디한 사이즈의 퍼퓸 밤과 함께 어디서든 자유롭게 향을 경험하고<br>
+                                스스로를 표현해보세요. 부드러운 텍스처로 맥박이 뛰는 손목, 귀밑 등에<br>
+                                부드럽게 발라주면 체온에 의해 은은하게 퍼지는 향을 느끼실 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="container">
+                    <ul>
+                         <li>
+                            <a href="sub2.html" class="product-img">
+                                <img src="images/sub1/balm1.png" alt="product1">
+                                <h4>Chamo</h4>
+                                <p>46,500 KRW</p>
+                                <span>6.5g</span>
+                            </a>
+                            <a href="sub2.html" class="product-hover">
+                                <p class="pragrance">
+                                    진득한 카모마일<br>
+                                    부드러운 나무결<br>
+                                    머스크
+                                </p>
+                                <p class="size">1 size</p>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="sub2.html" class="product-img">
+                                <img src="images/sub1/balm2.png" alt="product2">
+                                <h4>LALE</h4>
+                                <p>46,500 KRW</p>
+                                <span>6.5g</span>
+                            </a>
+                            <a href="sub2.html" class="product-hover">
+                                <p class="pragrance">
+                                    이슬을 머금은 풋사과<br>
+                                    화이트 튤립<br>
+                                    샌달우드
+                                </p>
+                                <p class="size">1 size</p>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="sub2.html" class="product-img">
+                                <img src="images/sub1/balm3.png" alt="product3">
+                                <h4>BERGA SANDAL</h4>
+                                <p>46,500 KRW</p>
+                                <span>6.5g</span>
+                            </a>
+                            <a href="sub2.html" class="product-hover">
+                                <p class="pragrance">
+                                    지중해의 베르가못<br>
+                                    쌉싸레한 청귤<br>
+                                    샌달우드
+                                </p>
+                                <p class="size">1 size</p>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="sub2.html" class="product-img">
+                                <img src="images/sub1/balm4.png" alt="product4">
+                                <h4>SUEDE PEAR</h4>
+                                <p>46,500 KRW</p>
+                                <span>6.5g</span>
+                            </a>
+                            <a href="sub2.html" class="product-hover">
+                                <p class="pragrance">
+                                    시원한 배<br>
+                                    스웨이드<br>
+                                    쌉쌀한 갈바넘
+                                </p>
+                                <p class="size">1 size</p>
+                            </a>
+                         </li>
+                     </ul> 
+                 </div>
+            </div>
+        </div>
+        <div class="product-box width1200" id="chain-hand">
+            <div class="product-banner">
+                <div class="banner">
+                    <div class="side">
+                        <img src="images/sub1/banner3.jpg" alt="banner3">
+                        <div class="side-text">
+                            <h3>Chain Hand</h3>
+                            <p>
+                                체인 핸드
+                            </p>
+                            <span>+ VIEW MORE</span>
+                        </div>
+                    </div>
+                    <div class="side back">
+                        <div class="back-text">
+                            <h3>Chain Hand</h3>
+                            <p>
+                                피부 친화력이 뛰어난 누드에이치앤드크림.<br>
+                                크림은 식물성 오일 성분으로 피부 장벽을 강화시키며 빠르게 스며듭니다.<br>
+                                끈적이지 않는 깔끔한 텍스처는 벨벳같이 부드러운 피부로 가꾸어줍니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-list" id="chain-sliding">
+                <div class="slide-btn" id="chainButton">
+                    <button class="prev-btn"><span>prev</span></button>
+                    <button class="next-btn"><span>next</span></button>
+                </div>
+                <div class="product-slide" id="chainSlide">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain1.png" alt="product1">
+                                    <h4>000</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>65ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        샌달우드<br>
+                                        패츌리<br>
+                                        흙 내음
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain2.png" alt="product2">
+                                    <h4>7</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>65ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        로즈우드<br>
+                                        코코넛 향<br>
+                                        우아함
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>00
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain3.png" alt="product3">
+                                    <h4>712</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>65ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        패츌리<br>
+                                        쌉싸레한 풀 줄기<br>
+                                        스모크함
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain4.png" alt="product4">
+                                    <h4>421</h4>
+                                    <p>32,000 KRW</p>
+                                    <span>65ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        바닐라 우디<br>
+                                        너티함
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                        </ul> 
+                        <ul>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain5.png" alt="product5">
+                                    <h4>000</h4>
+                                    <p>23,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        샌달우드<br>
+                                        패츌리<br>
+                                        흙 내음
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain6.png" alt="product6">
+                                    <h4>7</h4>
+                                    <p>23,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        로즈우드<br>
+                                        코코넛 향<br>
+                                        우아함
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain7.png" alt="product7">
+                                    <h4>712</h4>
+                                    <p>23,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        패츌리<br>
+                                        쌉싸레한 풀 줄기<br>
+                                        스모크함
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sub2.html" class="product-img">
+                                    <img src="images/sub1/chain8.png" alt="product8">
+                                    <h4>421</h4>
+                                    <p>23,000 KRW</p>
+                                    <span>30ML</span>
+                                </a>
+                                <a href="sub2.html" class="product-hover">
+                                    <p class="pragrance">
+                                        바닐라 우디<br>
+                                        너티함
+                                    </p>
+                                    <p class="size">2 size</p>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-wrap" class="width1200">
+            <div id="ft-top">
+                <h2 id="ft-logo">
+                    <a href="index.html">
+                        <img src="images/footer-logo.svg" alt="ft-logo">
+                    </a>
+                </h2>
+                <p>CUSTOMER SERVICE</p>
+                <ul>
+                    <li>
+                        1588-1234
+                    </li>
+                    <li>
+                        13:30 - 17:30
+                    </li>
+                    <li>
+                        토, 일요일 및 공휴일 휴무
+                    </li>
+                </ul>
+            </div>
+            <div id="ft-center">
+                <div class="ft-listbox">
+                    <h3>MEMBERSHIP BENEFIT</h3>
+                    <ul id="membership-benefit">
+                        <li><a href="#">공식 온라인 스토어 혜택</a></li>
+                        <li><a href="#">선물 추천 온라인 서비스</a></li>
+                    </ul>
+                </div>
+                <div class="ft-listbox">
+                    <h3>INFO</h3>
+                    <ul id="info">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">매장안내</a></li>
+                    </ul>
+                </div>
+                <div class="ft-listbox">
+                    <h3>CONTACT</h3>
+                    <ul id="contact-us">
+                        <li><a href="#">주문/배송조회</a></li>
+                        <li><a href="#">1:1 문의하기</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="ft-listbox">
+                    <h3>SOCIAL</h3>
+                    <ul id="social">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Kakaotalk</a></li>
+                        <li><a href="#">Weibo</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="ft-bottom">
+                주)아이아이컴바인드 &#124; 사업자등록번호: 119-86-38589 &#124; 대표자: 김한국 &#124; 서울특별시 마포구 어울마당로5길 41 &#124; 대표번호: 1644-1246 &#124; 이메일: <a href="#">cs@tamburins.com</a><br>
+                개인정보 보호 책임자: 정태호 &#124; 호스팅 서비스 사업자: Aws &#124; 통신판매업신고: 제 2014-서울마포-1050 호 <a href="#">(사업자정보확인)</a> &#124; <a href="#">개인정보처리방침</a> &#124; <a href="#">이용약관</a><br>
+                고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. 서비스 가입사실 확인<br>
+                &copy; 탬버린즈 대한민국
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

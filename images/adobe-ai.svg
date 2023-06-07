@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 78 76" style="enable-background:new 0 0 78 76;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'AdobeClean-Bold';}
+	.st1{font-size:47.4083px;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<font horiz-adv-x="1000">
+<!-- This font is intended for limited use by Adobe software, technology and authorized users. Any unauthorized installation, transfer and/or use of this font is strictly prohibited. Adobe Clean is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="AdobeClean-Bold" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M80,50l170,255l170,-255M279,350l171,255l0,-510M50,605l170,-255l-170,-255M80,650l340,0l-170,-255z"/>
+<glyph unicode="A" horiz-adv-x="606" d="M416,173l58,-167C476,2 479,0 484,0l112,0C602,0 603,3 602,9l-231,642C370,656 369,657 364,657l-139,0C221,657 219,654 219,650C217,616 214,606 210,596l-206,-586C3,3 5,0 11,0l100,0C117,0 120,2 122,8l55,165M209,282C239,373 279,490 295,557l1,0C316,487 363,348 384,282z"/>
+<glyph unicode="i" horiz-adv-x="248" d="M63,9C63,3 66,0 73,0l103,0C183,0 185,2 185,8l0,478C185,492 183,493 177,493l-106,0C66,493 63,491 63,486M124,560C166,560 193,588 193,629C193,669 168,698 125,698C85,698 56,670 56,629C56,588 83,560 124,560z"/>
+</font>
+
+	<text transform="matrix(1 0 0 1 18.615 52.033)" class="st0 st1">Ai</text>
+<path class="st2" d="M64.79,73.17H13.21c-5.45,0-9.88-4.42-9.88-9.88V12.7c0-5.45,4.42-9.88,9.88-9.88h51.57
+	c5.45,0,9.88,4.42,9.88,9.88V63.3C74.66,68.75,70.24,73.17,64.79,73.17z"/>
+</svg>
