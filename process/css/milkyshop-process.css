@@ -1,0 +1,560 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Libre Caslon Text', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #222;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    overflow-x: hidden;
+    background: url(../../images/backgrounds.png);
+}
+
+/* 마우스 커서 커스텀 */
+#cursor {
+    position: absolute;
+    z-index: 9999;
+    transform: translate(10%, 10%);
+    background-image: url("../images/cursor-smile.svg");
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    pointer-events: none;
+    }
+
+.mac {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.mac img {
+    position: relative;
+    margin-top: 3%;
+    height: 85%;
+    left: 60%;
+    transform: translateX(-60%);
+}
+
+.mac .info {
+    transform: translateY(-50%);
+}
+
+.mac .info::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.mac .info div {
+    float: left;
+    width: 20%;
+    margin-left: 25%;
+}
+
+.mac .info h2 {
+    font-size: 60px;
+    margin-bottom: 7%;
+    letter-spacing: 5px;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: bold;
+}
+
+.mac .info a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 15px;
+    height: 13px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 2% 8%;
+    transition: 0.3s;
+    font-weight: bold;
+    /* background-color: #e3ca9b; */
+}
+
+.mac .info a:hover {
+    background: #feca36;
+    color: #222;
+}
+
+.mac .info table {
+    float: left;
+    width: 40%;
+    bottom: 3%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.milkyshop .mac .info table {
+    right: 15%;
+}
+
+.mac .info table tr th {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.mac .info table tr td {
+    text-transform: uppercase;
+}
+
+.detail {
+    width: 100%;
+}
+
+.btn_bx {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20%;
+    margin-left: 20%;
+    padding: 2% 5%;
+    border-radius: 20px;
+    border: 1px solid #222;
+    border-color: #222 transparent;
+    background-color: #000;
+}
+
+.btn_bx button {
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.btn_bx button.on {
+    color: #feca36;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: #000;
+}
+
+.direction {
+    width: 60%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.direction > div {
+    width: 100%;
+    margin-bottom: 8%;
+    padding: 2% 6%;
+}
+
+.direction h2 {
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto;
+    padding: 2% 5%;
+    width: 40%;
+    background: #fff;
+    border: 2px solid #222;
+    border-radius: 20px;
+}
+
+.brand img {
+    width: 15%;
+    margin: 0 4%;
+}
+.brand p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.renewal > div {
+    float: left;
+    width: 38%;
+    height: 13rem;
+    border: 2px solid #222;
+    border-radius: 27px;
+    padding: 40px 50px;
+}
+
+.renewal h3 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 10%;
+}
+.renewal ol {
+    list-style-type: style;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.renewal_before {
+    margin-right: 5%;
+    background: #f4f4f4;
+}
+
+
+.renewal_after {
+    box-shadow: 10px 5px 0 #222;
+    background: #fff;
+}
+
+.renewal::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.keyword > span {
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #fff;
+    border: 2px solid #222;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.color_typho dl {
+    padding: 3rem;
+}
+
+.color_typho dt {
+    float: left;
+    width: 18%;
+    padding: 2rem 0;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 2%;
+}
+
+.color_typho dd {
+    float: left;
+    padding: 2rem 0;
+}
+
+.color_typho dd img {
+    padding: 0 2rem;
+    vertical-align: top;
+}
+
+.detail .img {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.detail .img.on {
+    display: block;
+}
+
+.detail .img img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.txt {
+    width: 250px;
+    z-index: 9999;
+}
+
+.txt h3 {
+    width: 250px;
+    height: 15%;
+    background: #feca36;
+    border: 2px solid #222;
+    border-radius: 40px;
+    font-size: 23px;
+    line-height: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.txt p {
+    margin-left: 10px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.txt span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #feca36;
+    border: 2px solid #222;
+    border-radius: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    animation: move 1s linear infinite;
+    cursor: pointer;
+}
+
+.main div {
+    display: none;
+}
+.sub1 div {
+    display: none;
+}
+.sub2 div {
+    display: none;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.main .click1 {
+    top: 1%;
+    right: 20%;
+}
+
+.main .main_txt1 {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+.main .click2 {
+    top: 5%;
+    right: 20%;
+}
+
+.main .main_txt2 {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+
+.main .click3 {
+    top: 12%;
+    right: 22%;
+}
+
+.main .main_txt3 {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+}
+
+.main .click4 {
+    top: 20%;
+    right: 23%;
+}
+
+.main .main_txt4 {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+
+.main .click5 {
+    top: 40%;
+    right: 23%;
+}
+
+.main .main_txt5 {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+}
+
+.main .click6 {
+    top: 44%;
+    right: 22%;
+}
+
+.main .main_txt6 {
+    position: absolute;
+    top: 44%;
+    right: 2%;
+}
+
+.main .click7 {
+    top: 48%;
+    right: 23%;
+}
+
+.main .main_txt7 {
+    position: absolute;
+    top: 48%;
+    right: 3%;
+}
+
+.main .click8 {
+    top: 56%;
+    right: 23%;
+}
+
+.main .main_txt8 {
+    position: absolute;
+    top: 56%;
+    right: 2%;
+}
+
+.main .click9 {
+    top: 82%;
+    right: 23%;
+}
+
+.main .main_txt9 {
+    position: absolute;
+    top: 82%;
+    right: 2%;
+}
+
+.main .click10 {
+    top: 95%;
+    right: 23%;
+}
+
+.main .main_txt10 {
+    position: absolute;
+    top: 95%;
+    right: 1%;
+}
+
+.sub1 .click1 {
+    top: 13%;
+    left: 22%;
+}
+
+.sub1 .sub1_txt1 {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+}
+
+.sub1 .click2 {
+    top: 22%;
+    right: 22%;
+}
+
+.sub1 .sub1_txt2 {
+    position: absolute;
+    top: 22%;
+    right: 2%;
+}
+
+.sub1 .click3 {
+    top: 36%;
+    right: 23%;
+}
+
+.sub1 .sub1_txt3 {
+    position: absolute;
+    top: 36%;
+    right: 3%;
+}
+
+.sub1 .click4 {
+    top: 63%;
+    right: 24%;
+}
+
+.sub1 .sub1_txt4 {
+    position: absolute;
+    top: 63%;
+    right: 4%;
+}
+
+.sub2 .click1 {
+    top: 17%;
+    left: 24%;
+}
+
+.sub2 .sub2_txt1 {
+    position: absolute;
+    top: 17%;
+    left: 4%;
+}
+
+.sub2 .click2 {
+    top: 13%;
+    right: 22%;
+}
+
+.sub2 .sub2_txt2 {
+    position: absolute;
+    top: 13%;
+    right: 2%;
+}
+
+.sub2 .click3 {
+    top: 26%;
+    right: 22%;
+}
+
+.sub2 .sub2_txt3 {
+    position: absolute;
+    top: 26%;
+    right: 1%;
+}
+
+.sub2 .click4 {
+    top: 42%;
+    right: 22%;
+}
+
+.sub2 .sub2_txt4 {
+    position: absolute;
+    top: 42%;
+    right: 1%;
+}
+
+.sub2 .click5 {
+    top: 59%;
+    right: 22%;
+}
+
+.sub2 .sub2_txt5 {
+    position: absolute;
+    top: 59%;
+    right: 1%;
+}

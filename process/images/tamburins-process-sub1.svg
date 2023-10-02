@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 4065.3 4175.5" style="enable-background:new 0 0 4065.3 4175.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FECA36;}
+	.st2{font-family:'NotoSansKR-Bold-KSCpc-EUC-H';}
+	.st3{font-size:14px;}
+	.st4{font-size:24px;}
+	.st5{font-family:'NotoSansKR-Medium-KSCpc-EUC-H';}
+	.st6{font-size:18px;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="1395.6" y="875.5" width="1273" height="6000"/>
+	</defs>
+	<clipPath id="SVGID_00000061455103438033706680000005907635835816015255_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000061455103438033706680000005907635835816015255_);">
+		
+			<image style="overflow:visible;" width="1273" height="6000" xlink:href="tamburins-process-sub1.png"  transform="matrix(1 0 0 1 1395.6328 875.5042)">
+		</image>
+	</g>
+</g>
+<line class="st0" x1="2404.8" y1="1016.6" x2="2522.1" y2="1016.6"/>
+<g>
+	<circle class="st1" cx="2400.5" cy="1025.1" r="16.6"/>
+</g>
+<text transform="matrix(1 0 0 1 2392.3818 1029.821)" class="st2 st3">01</text>
+<path class="st1" d="M2725.4,1049.8h-170c-18.3,0-33.2-14.9-33.2-33.2v0c0-18.3,14.9-33.2,33.2-33.2h170c18.3,0,33.2,14.9,33.2,33.2
+	v0C2758.6,1034.9,2743.7,1049.8,2725.4,1049.8z"/>
+<text transform="matrix(1 0 0 1 2557.082 1025.1013)" class="st2 st4">메인 비주얼 영역</text>
+<text transform="matrix(1 0 0 1 2543.5547 1084.222)"><tspan x="0" y="0" class="st5 st6">메인 사진이 확대되었다가 축소되는 효과로</tspan><tspan x="0" y="21.6" class="st5 st6">시선이 집중되게 하였습니다</tspan></text>
+</svg>
