@@ -525,16 +525,16 @@ $(function () {
 
     // 배너, 상세페이지, 그래픽 클릭시 페이드효과로 나타나기
     $bannerList = $(".banners > li > img");
-    $detailList = $(".details > li > img");
+    // $detailList = $(".details > li > img");
     $graphicList = $(".graphics > li > img");
 
     // 클릭한 이미지의 src 속성 가져오기
     $bannerList.each(function (index, element) {
         $(element).data("index", index);
     });
-    $detailList.each(function (index, element) {
-        $(element).data("index", index);
-    });
+    // $detailList.each(function (index, element) {
+    //     $(element).data("index", index);
+    // });
     $graphicList.each(function (index, element) {
         $(element).data("index", index);
     });
@@ -549,15 +549,15 @@ $(function () {
         $photo.attr("src", src).fadeIn(400);
     });
 
-    // 상세페이지 요소 클릭 시 페이드인
-    $detailList.on("click", function () {
-        detailIndex = $detailList.index(this);
+    // // 상세페이지 요소 클릭 시 페이드인
+    // $detailList.on("click", function () {
+    //     detailIndex = $detailList.index(this);
 
-        var src = this.src;
+    //     var src = this.src;
 
-        $fade.fadeIn(400);
-        $photo.attr("src", src).fadeIn(400);
-    });
+    //     $fade.fadeIn(400);
+    //     $photo.attr("src", src).fadeIn(400);
+    // });
 
     // 그래픽 요소 클릭 시 페이드인
     $graphicList.on("click", function () {
@@ -577,13 +577,13 @@ $(function () {
             $photo.attr("src", src).fadeIn(400);
         });
     }
-    // detailIndex 에 위치한 이미지로 바꾸는 함수
-    function changeDetail(detailIndex) {
-        $photo.fadeOut(400, function () {
-            var src = $detailList.eq(detailIndex).attr("src");
-            $photo.attr("src", src).fadeIn(400);
-        });
-    }
+    // // detailIndex 에 위치한 이미지로 바꾸는 함수
+    // function changeDetail(detailIndex) {
+    //     $photo.fadeOut(400, function () {
+    //         var src = $detailList.eq(detailIndex).attr("src");
+    //         $photo.attr("src", src).fadeIn(400);
+    //     });
+    // }
     // graphicIndex 에 위치한 이미지로 바꾸는 함수
     function changeGraphic(graphicIndex) {
         $photo.fadeOut(400, function () {
