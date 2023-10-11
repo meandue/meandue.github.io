@@ -392,14 +392,24 @@ nav.on {
     font-weight: bold;
     margin-top: 20px;
     transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
 }
 .brand-intro > h3.move {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .brand-intro > p {
     line-height: 20px;
     margin-top: 60px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+.brand-intro > p.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #brand-intro > img {
@@ -431,6 +441,13 @@ nav.on {
 
 .t-product-box > img {
     margin-bottom: 60px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 2s;
+}
+.t-product-box > img.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .t-product-box > p:first-child {
@@ -474,7 +491,16 @@ nav.on {
 
 #best-slide {
     margin-bottom: 180px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
 }
+
+#best-slide.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 .slide-top {
     width: 100%;
@@ -641,7 +667,16 @@ nav.on {
 
 #best-banner {
     background: url("../images/main/banner1.jpg") no-repeat center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
 }
+
+#best-banner.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 .banner-text {
     position: absolute;
@@ -704,6 +739,18 @@ nav.on {
     margin-top: 40px;
 }
 
+#new-img {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 2s;
+}
+
+#new-img.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 #new-title > .t-product-box > .view-btn {
     display: block;
     width: 110px;
@@ -744,6 +791,14 @@ nav.on {
     float: left;
     width: 40%;
     height: 100%;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s;
+}
+
+#new-comment1.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .new-comment > p {
@@ -768,6 +823,14 @@ nav.on {
     width: 60%;
     height: 100%;
     /* filter: blur(5px); */
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 2s;
+}
+
+#new-photo1.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #new-info1 > #new-photo1 > img:nth-of-type(1) {
@@ -784,12 +847,28 @@ nav.on {
     width: 60%;
     height: 100%;
     /* filter: blur(5px); */
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s;
+}
+
+#new-photo2.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #new-comment2 {
     float: right;
     width: 40%;
     height: 100%;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 2s;
+}
+
+#new-comment2.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #new-comment2 > p:first-child {
@@ -815,6 +894,14 @@ nav.on {
 
 #new-banner {
     background: url("../images/main/banner2.jpg") no-repeat center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+
+#new-banner.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* section06 */
@@ -884,6 +971,17 @@ nav.on {
 #story-comment > p {
     font-size: 14px;
     line-height: 20px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#story-comment > #p1.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+#story-comment > #p2.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #story-comment > h4 {
@@ -892,7 +990,15 @@ nav.on {
     font-weight: bold;
     line-height: 30px;
     margin: 20px 0;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
 }
+#story-comment > h4.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 #story-comment > .view-btn {
     display: block;
@@ -906,7 +1012,13 @@ nav.on {
     border: 1px solid #000;
     color: #000;
     text-align: center;
-    transition: 0.5s;
+    transition: 1s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+#story-comment > .view-btn.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #story-comment > .view-btn:hover {
@@ -919,6 +1031,13 @@ nav.on {
 #story-photo {
     margin-top: 80px;
     /* filter: blur(5px); */
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#story-photo.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #story-photo:hover {
@@ -1026,13 +1145,38 @@ nav.on {
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
 }
+#section07 > h3.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 #section07 > p {
     font-size: 14px;
     line-height: 20px;
     color: #ccc;
     text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#section07 > p.move {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#location-list {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#location-list.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #location-list > .slide-btn {
@@ -1171,6 +1315,13 @@ nav.on {
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#section08 > h3.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #section08 > p {
@@ -1178,12 +1329,26 @@ nav.on {
     line-height: 20px;
     color: #ccc;
     text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#section08 > p.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #campaign {
     width: 835px;
     margin: 100px auto;
     overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+#campaign.move {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 #campaign > ul:first-child{

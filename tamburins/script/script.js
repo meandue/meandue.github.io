@@ -187,6 +187,43 @@ $(function(){
         });
     });
 
-    // scroll Event
+    
+    // parallax function
 
+    function parallax(st, th){
+        if(st >= (th.offset().top - $(window).outerHeight() * 0.8)){
+            th.addClass("move");
+        }
+        else{th.removeClass("move")};
+    }
+
+    // scroll Event
+    $(window).scroll(function(){
+        var $this = $(this);
+        var scrollTop = $this.scrollTop();
+
+    // parallax
+    parallax(scrollTop,$(".brand-intro > h3"));
+    parallax(scrollTop,$(".brand-intro > p"));
+    parallax(scrollTop,$(".t-product-box > img"));
+    parallax(scrollTop,$("#best-slide"));
+    parallax(scrollTop,$("#best-banner"));
+    parallax(scrollTop,$("#new-img"));
+    parallax(scrollTop,$("#new-comment1"));
+    parallax(scrollTop,$("#new-photo1"));
+    parallax(scrollTop,$("#new-comment2"));
+    parallax(scrollTop,$("#new-photo2"));
+    parallax(scrollTop,$("#new-banner"));
+    parallax(scrollTop,$("#story-comment > #p1"));
+    parallax(scrollTop,$("#story-comment > #p2"));
+    parallax(scrollTop,$("#story-comment > h4"));
+    parallax(scrollTop,$("#story-comment > .view-btn"));
+    parallax(scrollTop,$("#story-photo"));
+    parallax(scrollTop,$("#section07 > h3"));
+    parallax(scrollTop,$("#section07 > p"));
+    parallax(scrollTop,$("#location-list"));
+    parallax(scrollTop,$("#section08 > h3"));
+    parallax(scrollTop,$("#section08 > p"));
+    parallax(scrollTop,$("#campaign"));
+    });
 });
